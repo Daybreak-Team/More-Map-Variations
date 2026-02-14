@@ -24,41 +24,34 @@ $Event(0, Default, function() {
     if (IsMapVariation(2)) {
         $InitializeCommonEvent(0, 90015442, 49662200, 49660200);
     }
-    $InitializeCommonEvent(0, 90065124, 49660200, 49660205, 49660800, 950000, 690048, 49665210, 49660800, 904970000, 49660810, 904971000, 0, 0);
-    $InitializeCommonEvent(0, 90065911, 49660200, 49660800, 950000, 49665210, 49660800, 904970000, 49660810, 904971000, 0, 0, 0);
+    $InitializeCommonEvent(0, 90065910, 49660200, 49662205, 49660800, 950000, 690047, 49660800, 49660800, 904970000, 0, 0, 0, 0);
+    $InitializeCommonEvent(0, 90065911, 49660200, 49660800, 950000, 49660800, 49660800, 904970000, 0, 0, 0, 0, 0);
     if (!IsMapVariation(2)) {
         $InitializeCommonEvent(0, 90065900, 49660800, 2, 0, 0, 1050, 950000, 904970000, 49660800);
     }
-    $InitializeCommonEvent(0, 90015012, 49665210, 49660200);
-    $InitializeCommonEvent(1, 90015012, 0, 49660200);
+    $InitializeCommonEvent(0, 90015012, 49660800, 49660200);
     $InitializeCommonEvent(0, 90015020, 49660200, 49660800);
-    $InitializeCommonEvent(0, 90015008, 49660205, 49660800, 950000, 49665210, 14601, 0);
-    if (!IsMapVariation(2)) {
-        $InitializeCommonEvent(0, 90065123, 49660800, 49660810, 49660200, 49660800, 904971000, 49660206);
-    }
-    if (IsMapVariation(2)) {
-        $InitializeCommonEvent(0, 90065125, 49660800, 49660810, 49660200, 49660800, 904971000, 49660206, 49660207);
-    }
+    $InitializeCommonEvent(0, 90015008, 49662205, 49660800, 950000, 49660800, 16230, 0);
+    $InitializeCommonEvent(0, 90065920, 49660800, 7315);
     if (IsMapVariation(2)) {
         $InitializeCommonEvent(0, 90015443, 49662200, 49660800);
-        $InitializeCommonEvent(0, 90015023, 49660200, 40, 0, 49665210, 49660800, 904970000, 0, 0, 0, 0);
-        $InitializeCommonEvent(0, 90015026, 49660206, 40, 0, 49665210, 49660810, 904971000);
-        $InitializeCommonEvent(0, 90015030, 49660200, 49665210, 40, 950000, 0);
-        $InitializeCommonEvent(0, 90015002, 0, 49660200, 0, 49665210, 1020, 950000, 110320, 904970000, 49660800);
-        $InitializeCommonEvent(0, 90015470, 49662200, 49660200, 49660800, 49665210, 0, 0, 49665210);
+        $InitializeCommonEvent(0, 90015023, 49660200, 40, 0, 49660800, 49660800, 904970000, 0, 0, 0, 0);
+        $InitializeCommonEvent(0, 90015030, 49660200, 49660800, 40, 950000, 0);
+        $InitializeCommonEvent(0, 90015002, 0, 49660200, 49660800, 49660800, 1020, 950000, 110320, 904970000, 49660800);
+        $InitializeCommonEvent(0, 90015470, 49662200, 49660200, 49660800, 49660800, 0, 0, 0);
+        $InitializeCommonEvent(0, 90015476, 10002, 49662200);
+        $InitializeCommonEvent(0, 90015476, 10003, 49662200);
+        $InitializeCommonEvent(0, 90015476, 10004, 49662200);
+        $InitializeCommonEvent(0, 90065140, 49660800);
     }
     if (IsMapVariation(2)) {
-        $InitializeCommonEvent(0, 90015446, 49665210, 49660200, 49660800, 49662200);
+        $InitializeCommonEvent(0, 90015446, 49660800, 49660200, 49660800, 49662200);
     }
     if (IsMapVariation(2)) {
         $InitializeCommonEvent(0, 90015460, 49662200, 49660800);
-        $InitializeCommonEvent(0, 90015460, 49662200, 49660810);
-        $InitializeCommonEvent(0, 90015460, 49662200, 0);
     }
     if (IsMapVariation(2)) {
         $InitializeCommonEvent(0, 90015475, 49662200, 49660800);
-        $InitializeCommonEvent(0, 90015475, 49662200, 49660810);
-        $InitializeCommonEvent(0, 90015475, 49662200, 0);
     }
     $InitializeCommonEvent(0, 90035001, 49660800);
     if (2 == 1) {
@@ -87,15 +80,13 @@ $Event(0, Default, function() {
     }
 });
 
-$Event(49662800, Default, function(chrEntityId, assetEntityId, chrEntityId2, eventFlagId, eventFlagId2, eventFlagId3, chrEntityId3) {
+$Event(49662800, Default, function(chrEntityId, assetEntityId, chrEntityId2, eventFlagId, eventFlagId2, eventFlagId3) {
     EndIf(EventFlag(eventFlagId));
     EndIf(EventFlag(eventFlagId2));
     WaitFor(HPRatio(chrEntityId) <= 0);
-    WaitFor(HPRatio(chrEntityId3) <= 0);
     WaitFixedTimeSeconds(4);
     WaitFor(CharacterDead(chrEntityId));
-    DisplayBossHealthBar(Disabled, chrEntityId, 0, 902500520);
-    DisplayBossHealthBar(Disabled, chrEntityId3, 1, 902500520);
+    DisplayBossHealthBar(Disabled, chrEntityId, 0, 0);
     if (assetEntityId != 0) {
         EnableAsset(assetEntityId);
     }
@@ -109,41 +100,33 @@ $Event(49662800, Default, function(chrEntityId, assetEntityId, chrEntityId2, eve
     SetEventFlagID(eventFlagId2, ON);
     WaitFor(ElapsedSeconds(3));
     DisableCharacter(chrEntityId);
-    DisableCharacter(chrEntityId3);
 });
 
-$Event(49662810, Restart, function(chrEntityId, eventFlagId, eventFlagId2, eventFlagId3, nameId, eventFlagId4, eventFlagId5, chrEntityId2) {
+$Event(49662810, Restart, function(chrEntityId, eventFlagId, eventFlagId2, eventFlagId3, nameId, eventFlagId4, eventFlagId5) {
     if (EventFlag(eventFlagId4) || EventFlag(eventFlagId5)) {
         DisableCharacter(chrEntityId);
-        DisableCharacter(chrEntityId2);
         DisableCharacterCollision(chrEntityId);
-        DisableCharacterCollision(chrEntityId2);
         ForceCharacterDeath(chrEntityId, false);
-        ForceCharacterDeath(chrEntityId2, false);
         EndEvent();
     }
 L0:
     DisableCharacter(chrEntityId);
-    DisableCharacter(chrEntityId2);
     DisableCharacterCollision(chrEntityId);
-    DisableCharacterCollision(chrEntityId2);
     DisableCharacterAI(chrEntityId);
-    DisableCharacterAI(chrEntityId2);
     flag = EventFlag(7515) && (EventFlag(eventFlagId) || EventFlag(eventFlagId2));
     WaitFor(EventFlag(eventFlagId3));
     WaitFixedTimeSeconds(1);
     EnableCharacter(chrEntityId);
-    EnableCharacter(chrEntityId2);
     EnableCharacterCollision(chrEntityId);
-    EnableCharacterCollision(chrEntityId2);
     EnableCharacterAI(chrEntityId);
-    EnableCharacterAI(chrEntityId2);
-    //ForceAnimationPlayback(49660800, 20005, false, false, false);
+    ForceAnimationPlayback(49660800, 20005, false, false, false);
     DisableCharacterHPBarDisplay(chrEntityId);
-    DisableCharacterHPBarDisplay(chrEntityId2);
+    DisableCharacterHPBarDisplay(49660801);
+    CreateReferredDamagePair(49660801, chrEntityId);
+    CreateReferredDamagePair(49660802, chrEntityId);
     EnableCharacterAI(chrEntityId);
-    EnableCharacterAI(chrEntityId2);
     SetNetworkUpdateRate(49660800, true, CharacterUpdateFrequency.AlwaysUpdate);
     DisplayBossHealthBar(Enabled, chrEntityId, 0, nameId);
-    DisplayBossHealthBar(Enabled, chrEntityId2, 0, nameId);
 });
+
+
