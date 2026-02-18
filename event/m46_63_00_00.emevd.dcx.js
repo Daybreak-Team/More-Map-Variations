@@ -22,7 +22,7 @@ $Event(0, Default, function() {
     $InitializeCommonEvent(0, 90015000, 0, 46635820, 903150610, 30, 0, 0);
     $InitializeCommonEvent(0, 90015030, 0, 46635820, 30, 921010, 0);
     $InitializeCommonEvent(0, 90015002, 0, 0, 46635820, 46635820, 1020, 921010, 11290, 903150610, 46635820);
-    $InitializeCommonEvent(0, 9005810, 46635820, 46630500, 46631500, 5);
+    $InitializeCommonEvent(0, 9005810, 46630820, 46630500, 46631500, 5);
     $InitializeCommonEvent(0, 90015005, 46631500, 46632800, 46635820);
     GotoIf(S0, Signed(18870) != 0);
     GotoIf(S0, 0 != 0);
