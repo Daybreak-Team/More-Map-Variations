@@ -53,14 +53,14 @@ $Event(0, Default, function() {
     GotoIf(S0, 0 != 0);
     Goto(S1);
 S0:
-    $InitializeCommonEvent(0, 90015008, 0, 46620800, 940000, 46625800, 0, 0);
-    $InitializeCommonEvent(0, 90015008, 0, 46620800, 940000, 46625810, 0, 0);
-    $InitializeCommonEvent(0, 90015008, 0, 46620800, 940000, 46625820, 0, 0);
-    $InitializeCommonEvent(0, 90015008, 0, 46620800, 940000, 46625830, 0, 0);
-    $InitializeCommonEvent(0, 90015008, 0, 46620800, 940000, 46625840, 0, 0);
-    $InitializeCommonEvent(0, 90015008, 0, 46620800, 940000, 46625850, 0, 0);
-    $InitializeCommonEvent(0, 90015008, 0, 46620800, 940000, 46625860, 0, 0);
-    $InitializeCommonEvent(0, 90015008, 0, 46620800, 940000, 46625870, 0, 0);   
+    $InitializeCommonEvent(0, 90015008, 0, 46625800, 940000, 46625800, 0, 0);
+    $InitializeCommonEvent(0, 90015008, 0, 46625810, 940000, 46625810, 0, 0);
+    $InitializeCommonEvent(0, 90015008, 0, 46625820, 940000, 46625820, 0, 0);
+    $InitializeCommonEvent(0, 90015008, 0, 46625830, 940000, 46625830, 0, 0);
+    $InitializeCommonEvent(0, 90015008, 0, 46625840, 940000, 46625840, 0, 0);
+    $InitializeCommonEvent(0, 90015008, 0, 46625850, 940000, 46625850, 0, 0);
+    $InitializeCommonEvent(0, 90015008, 0, 46625860, 940000, 46625860, 0, 0);
+    $InitializeCommonEvent(0, 90015008, 0, 46625870, 940000, 46625870, 0, 0);   
 S1:
     if (0 != 0) {
         $InitializeCommonEvent(0, 90015013);
