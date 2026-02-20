@@ -10916,10 +10916,12 @@ $Event(90065123, Restart, function(chrEntityId, chrEntityId2, eventFlagId, event
     WarpCharacterAndCopyFloor(chrEntityId2, TargetEntityType.Character, chrEntityId, 900, chrEntityId);
     WaitFor(ElapsedSeconds(4));
     DisplayBossHealthBar(Disabled, chrEntityId, 0, nameId)
-    SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 900, 621196);
     SetNetworkUpdateRate(chrEntityId2, true, CharacterUpdateFrequency.AlwaysUpdate);
     DisableCharacterHPBarDisplay(chrEntityId2);
-    WaitFor(ElapsedSeconds(4));
+    // Black smoke visual
+    WaitFor(ElapsedSeconds(3));
+    SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 900, 621196);
+    WaitFor(ElapsedSeconds(1));
     EnableCharacter(chrEntityId2);
     EnableCharacterAI(chrEntityId2);
     //ForceRatioAnimationPlayback(chrEntityId2, 20026, false, false, false);
@@ -21349,5 +21351,3 @@ $Event(90005934, Default, function(eventFlagId, tutorialParamId) {
     WaitFor(flag);
     ShowTutorialPopup(tutorialParamId, false, true);
 });
-
-
