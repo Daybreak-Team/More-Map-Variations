@@ -12154,7 +12154,7 @@ L1:
     }
     // Fix for missing Manus dummypolyid
     if (chrEntityId2 == 49630800)
-        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 200, sfxId);
+        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 11, sfxId);
     else
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 900, sfxId);
     SetNetworkUpdateRate(chrEntityId, true, CharacterUpdateFrequency.AlwaysUpdate);
