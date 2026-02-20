@@ -12152,7 +12152,11 @@ L1:
     if (!IsMapVariation(2)) {
         SetBossBGM(bgmBossConvParamId, BossBGMState.Start);
     }
-    SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 900, sfxId);
+    // Fix for missing Manus dummypolyid
+    if (chrEntityId2 == 49630800)
+        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 200, sfxId);
+    else
+        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 900, sfxId);
     SetNetworkUpdateRate(chrEntityId, true, CharacterUpdateFrequency.AlwaysUpdate);
     DisableCharacterHPBarDisplay(chrEntityId);
     WaitFor(ElapsedSeconds(4));
