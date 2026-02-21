@@ -12154,7 +12154,10 @@ L1:
     }
     // Fix for missing Manus dummypolyid
     if (chrEntityId2 == 49630800)
-        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 11, sfxId);
+    {
+        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 30, sfxId);
+        //ActivateGparamOverride(14, 5);
+    }
     else
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 900, sfxId);
     SetNetworkUpdateRate(chrEntityId, true, CharacterUpdateFrequency.AlwaysUpdate);
@@ -12287,6 +12290,20 @@ $Event(90065920, Restart, function(chrEntityId, spEffectId) {
     if (cond) {
         SetSpEffect(chrEntityId, spEffectId);
     }
+});
+
+// Manus weather change event
+$Event(90065950, Restart, function(chrEntityId) {
+    WaitFor(EventFlag(7504));
+    if (CharacterHasSpEffect(chrEntityId, 85000000)) {
+        ActivateGparamOverride(14, 3);
+    } else {
+        WaitFor(CharacterHasSpEffect(chrEntityId, 85000000));
+        ActivateGparamOverride(14, 3);
+    }
+L0:
+    WaitFor(CharacterHPValue(chrEntityId) <= 0);
+    DeactivateGparamOverride(5);
 });
 
 $Event(90075000, Restart, function(chrEntityId, chrEntityId2) {

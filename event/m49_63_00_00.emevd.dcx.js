@@ -26,6 +26,10 @@ $Event(0, Default, function() {
     }
     $InitializeCommonEvent(0, 90065910, 49630200, 49632205, 49630800, 921100, 690047, 49630800, 49630800, 904974000, 0, 0, 0, 0);
     $InitializeCommonEvent(0, 90065911, 49630200, 49630800, 921100, 49630800, 49630800, 904974000, 0, 0, 0, 0, 0);
+    
+    // Manus weather change event
+    $InitializeCommonEvent(0, 90065950, 49630800);
+    
     if (!IsMapVariation(2)) {
         $InitializeCommonEvent(0, 90065900, 49630800, 2, 0, 0, 1050, 921100, 904974000, 49630800);
     }
@@ -126,6 +130,5 @@ L0:
     CreateReferredDamagePair(49630802, chrEntityId);
     EnableCharacterAI(chrEntityId);
     SetNetworkUpdateRate(49630800, true, CharacterUpdateFrequency.AlwaysUpdate);
-    ActivateGparamOverride(14, 5);
     DisplayBossHealthBar(Enabled, chrEntityId, 0, nameId);
 });
