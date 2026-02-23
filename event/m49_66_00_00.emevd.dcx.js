@@ -24,15 +24,23 @@ $Event(0, Default, function() {
     if (IsMapVariation(2)) {
         $InitializeCommonEvent(0, 90015442, 49662200, 49660200);
     }
-    $InitializeCommonEvent(0, 90065124, 49660200, 49660205, 49660800, 950000, 690048, 49665210, 49660800, 904970000, 49660810, 904971000, 0, 0);
-    $InitializeCommonEvent(0, 90065911, 49660200, 49660800, 950000, 49665210, 49660800, 904970000, 49660810, 904971000, 0, 0, 0);
+
+    // Phase 2 spawn in event which also sets BGM for phase 2
+    $InitializeCommonEvent(0, 90065124, 49660200, 49660205, 49660800, 100600, 690048, 49665210, 49660800, 904970000, 49660810, 904971000, 0, 0);
+    $InitializeCommonEvent(0, 90065911, 49660200, 49660800, 100600, 49665210, 49660800, 904970000, 49660810, 904971000, 0, 0, 0);
+    
+    // Set BGM for phase 1 and 2
+    $InitializeCommonEvent(0, 90065126, 49660800);
+    // Set BGM for phase 3 
+    $InitializeCommonEvent(0, 90065127, 49660810);
+    
     if (!IsMapVariation(2)) {
-        $InitializeCommonEvent(0, 90065900, 49660800, 2, 0, 0, 1050, 950000, 904970000, 49660800);
+        $InitializeCommonEvent(0, 90065900, 49660800, 2, 0, 0, 1050, 100600, 904970000, 49660800);
     }
     $InitializeCommonEvent(0, 90015012, 49665210, 49660200);
     $InitializeCommonEvent(1, 90015012, 0, 49660200);
     $InitializeCommonEvent(0, 90015020, 49660200, 49660800);
-    $InitializeCommonEvent(0, 90015008, 49660205, 49660800, 950000, 49665210, 14601, 0);
+    $InitializeCommonEvent(0, 90015008, 49660205, 49660800, 100600, 49665210, 14601, 0);
     if (!IsMapVariation(2)) {
         $InitializeCommonEvent(0, 90065123, 49660800, 49660810, 49660200, 49660800, 904971000, 49660206);
     }
@@ -43,8 +51,8 @@ $Event(0, Default, function() {
         $InitializeCommonEvent(0, 90015443, 49662200, 49660800);
         $InitializeCommonEvent(0, 90015023, 49660200, 40, 0, 49665210, 49660800, 904970000, 0, 0, 0, 0);
         $InitializeCommonEvent(0, 90015026, 49660206, 40, 0, 49665210, 49660810, 904971000);
-        $InitializeCommonEvent(0, 90015030, 49660200, 49665210, 40, 950000, 0);
-        $InitializeCommonEvent(0, 90015002, 0, 49660200, 0, 49665210, 1020, 950000, 110320, 904970000, 49660800);
+        $InitializeCommonEvent(0, 90015030, 49660200, 49665210, 40, 100600, 0);
+        $InitializeCommonEvent(0, 90015002, 0, 49660200, 0, 49665210, 1020, 100600, 110320, 904970000, 49660800);
         $InitializeCommonEvent(0, 90015470, 49662200, 49660200, 49660800, 49665210, 0, 0, 49665210);
         $InitializeCommonEvent(0, 90015478, 49660800, 49660800);
         $InitializeCommonEvent(0, 90015478, 49660810, 49660800);        

@@ -836,7 +836,7 @@ $Event(90015030, Restart, function(eventFlagId, chrEntityId, targetDistance, bgm
     if (eventFlagId2 != 0) {
         EndIf(EventFlag(eventFlagId2));
     }
-    SetBossBGM(bgmBossConvParamId, BossBGMState.Start);
+    SetBossBGM(bgmBossConvParamId, BossBGMState.Start);  
     WaitFixedTimeFrames(1);
     chrArea = (CharacterAIState(chrEntityId, AIStateType.Recognition, LessOrEqual, 0)
         && CharacterAIState(chrEntityId, AIStateType.Alert, LessOrEqual, 0)
@@ -10918,9 +10918,9 @@ $Event(90065123, Restart, function(chrEntityId, chrEntityId2, eventFlagId, event
     DisplayBossHealthBar(Disabled, chrEntityId, 0, nameId)
     SetNetworkUpdateRate(chrEntityId2, true, CharacterUpdateFrequency.AlwaysUpdate);
     DisableCharacterHPBarDisplay(chrEntityId2);
-    // Black smoke visual
     WaitFor(ElapsedSeconds(3));
-    SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 900, 621196);
+    // Custom spawn visual
+    SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 900, 662099);
     WaitFor(ElapsedSeconds(1));
     EnableCharacter(chrEntityId2);
     EnableCharacterAI(chrEntityId2);
@@ -11028,7 +11028,7 @@ $Event(90065125, Restart, function(chrEntityId, chrEntityId2, eventFlagId, event
         SetNetworkUpdateRate(chrEntityId2, true, CharacterUpdateFrequency.AlwaysUpdate);
         DisableCharacterHPBarDisplay(chrEntityId2);
         WaitFor(ElapsedSeconds(4));
-        EnableCharacter(chrEntityId2);
+        EnableCharacter(chrEntityId2);      
         EnableCharacterAI(chrEntityId2);
         //ForceRatioAnimationPlayback(chrEntityId2, 20026, false, false, false);
         SetNetworkconnectedEventFlagID(eventFlagId3, ON);
@@ -11041,6 +11041,36 @@ $Event(90065125, Restart, function(chrEntityId, chrEntityId2, eventFlagId, event
 L0:
     WaitFor(CharacterDead(chrEntityId2));
     SetNetworkconnectedEventFlagID(eventFlagId4, ON);
+});
+
+// Gael BGM event phase 1 and 2
+$Event(90065126, Restart, function(chrEntityId) {
+    WaitFor(EventFlag(7504));
+    if (CharacterHasSpEffect(chrEntityId, 90030)) {
+        SetBossBGM(100600, BossBGMState.Stop2);
+        WaitFixedTimeSeconds(3.5);
+        SetBossBGM(100600, BossBGMState.HeatUp);
+        
+    } else {
+        WaitFor(CharacterHasSpEffect(chrEntityId, 90030));
+        SetBossBGM(100600, BossBGMState.Stop2);
+        WaitFixedTimeSeconds(3.5);
+        SetBossBGM(100600, BossBGMState.HeatUp);
+    }
+L0:
+    WaitFor(CharacterHPValue(chrEntityId) <= 0);
+    SetBossBGM(100600, BossBGMState.Stop2);
+    WaitFixedTimeSeconds(7);
+    SetBossBGM(100520, BossBGMState.Start);
+});
+
+// Gael BGM event phase 3
+$Event(90065127, Restart, function(chrEntityId) {
+    WaitFor(CharacterHPValue(chrEntityId) <= 2000);
+    WaitFixedTimeSeconds(2);
+    SetBossBGM(100800, BossBGMState.HeatUp);
+    WaitFor(CharacterHPValue(chrEntityId) <= 0);
+    SetBossBGM(100800, BossBGMState.Stop2);
 });
 
 $Event(90065130, Restart, function(chrEntityId, chrEntityId2, eventFlagId, eventFlagId2, nameId, eventFlagId3) {
