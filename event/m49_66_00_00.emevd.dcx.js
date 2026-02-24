@@ -25,7 +25,7 @@ $Event(0, Default, function() {
         $InitializeCommonEvent(0, 90015442, 49662200, 49660200);
     }
 
-    // Phase 2 spawn in event which also sets BGM for phase 2
+    // Phase 2 spawn in event
     $InitializeCommonEvent(0, 90065124, 49660200, 49660205, 49660800, 100600, 690048, 49665210, 49660800, 904970000, 49660810, 904971000, 0, 0);
     $InitializeCommonEvent(0, 90065911, 49660200, 49660800, 100600, 49665210, 49660800, 904970000, 49660810, 904971000, 0, 0, 0);
     

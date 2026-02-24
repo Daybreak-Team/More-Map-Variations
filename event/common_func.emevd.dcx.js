@@ -11045,7 +11045,7 @@ L0:
 
 // Gael BGM event phase 1 and 2
 $Event(90065126, Restart, function(chrEntityId) {
-    WaitFor(EventFlag(7504));
+    WaitFor(EventFlag(7509));
     if (CharacterHasSpEffect(chrEntityId, 90030)) {
         SetBossBGM(100600, BossBGMState.Stop2);
         WaitFixedTimeSeconds(3.5);
@@ -12323,7 +12323,7 @@ $Event(90065920, Restart, function(chrEntityId, spEffectId) {
 
 // Manus weather change event
 $Event(90065950, Restart, function(chrEntityId) {
-    WaitFor(EventFlag(7504));
+    WaitFor(EventFlag(7509));
     if (CharacterHasSpEffect(chrEntityId, 85000000)) {
         ActivateGparamOverride(14, 3);
     } else {
