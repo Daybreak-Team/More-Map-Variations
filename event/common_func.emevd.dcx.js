@@ -11066,8 +11066,7 @@ L0:
 
 // Gael BGM event phase 3
 $Event(90065127, Restart, function(chrEntityId) {
-    WaitFor(CharacterHPValue(chrEntityId) <= 2000);
-    WaitFixedTimeSeconds(2);
+    WaitFor(CharacterHasSpEffect(chrEntityId, 20050004));
     SetBossBGM(100800, BossBGMState.HeatUp);
     WaitFor(CharacterHPValue(chrEntityId) <= 0);
     SetBossBGM(100800, BossBGMState.Stop2);
