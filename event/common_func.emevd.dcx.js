@@ -10921,7 +10921,7 @@ $Event(90065123, Restart, function(chrEntityId, chrEntityId2, eventFlagId, event
     WaitFor(ElapsedSeconds(6));
     // Play sound
     PlaySE(chrEntityId2, SoundType.SFX, 710000000);
-    WaitFor(ElapsedSeconds(3));
+    WaitFor(ElapsedSeconds(2.5));
     // Custom spawn visual
     SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 900, 662099);
     WaitFor(ElapsedSeconds(2));
@@ -11049,7 +11049,7 @@ L0:
 
 // Gael BGM event phase 1 and 2
 $Event(90065126, Restart, function(chrEntityId) {
-    WaitFor(EventFlag(7504));
+    WaitFor(EventFlag(7509));
     if (CharacterHasSpEffect(chrEntityId, 90030)) {
         SetBossBGM(100600, BossBGMState.Stop2);
         WaitFixedTimeSeconds(3.5);
@@ -11064,7 +11064,7 @@ $Event(90065126, Restart, function(chrEntityId) {
 L0:
     WaitFor(CharacterHPValue(chrEntityId) <= 0);
     SetBossBGM(100600, BossBGMState.Stop2);
-    WaitFixedTimeSeconds(14);
+    WaitFixedTimeSeconds(13.5);
     SetBossBGM(100520, BossBGMState.Start);
 });
 
