@@ -10918,7 +10918,7 @@ $Event(90065123, Restart, function(chrEntityId, chrEntityId2, eventFlagId, event
     DisplayBossHealthBar(Disabled, chrEntityId, 0, nameId)
     SetNetworkUpdateRate(chrEntityId2, true, CharacterUpdateFrequency.AlwaysUpdate);
     DisableCharacterHPBarDisplay(chrEntityId2);
-    WaitFor(ElapsedSeconds(6));
+    WaitFor(ElapsedSeconds(8));
     // Play sound
     PlaySE(chrEntityId2, SoundType.SFX, 710000000);
     WaitFor(ElapsedSeconds(2.5));
@@ -11064,7 +11064,7 @@ $Event(90065126, Restart, function(chrEntityId) {
 L0:
     WaitFor(CharacterHPValue(chrEntityId) <= 0);
     SetBossBGM(100600, BossBGMState.Stop2);
-    WaitFixedTimeSeconds(13.5);
+    WaitFixedTimeSeconds(15.5);
     SetBossBGM(100520, BossBGMState.Start);
 });
 
