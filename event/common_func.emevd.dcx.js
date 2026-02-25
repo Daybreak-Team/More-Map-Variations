@@ -10918,10 +10918,10 @@ $Event(90065123, Restart, function(chrEntityId, chrEntityId2, eventFlagId, event
     DisplayBossHealthBar(Disabled, chrEntityId, 0, nameId)
     SetNetworkUpdateRate(chrEntityId2, true, CharacterUpdateFrequency.AlwaysUpdate);
     DisableCharacterHPBarDisplay(chrEntityId2);
-    WaitFor(ElapsedSeconds(3));
+    WaitFor(ElapsedSeconds(5));
     // Custom spawn visual
     SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 900, 662099);
-    WaitFor(ElapsedSeconds(1));
+    WaitFor(ElapsedSeconds(2));
     EnableCharacter(chrEntityId2);
     EnableCharacterAI(chrEntityId2);
     //ForceRatioAnimationPlayback(chrEntityId2, 20026, false, false, false);
@@ -11060,7 +11060,7 @@ $Event(90065126, Restart, function(chrEntityId) {
 L0:
     WaitFor(CharacterHPValue(chrEntityId) <= 0);
     SetBossBGM(100600, BossBGMState.Stop2);
-    WaitFixedTimeSeconds(7);
+    WaitFixedTimeSeconds(10);
     SetBossBGM(100520, BossBGMState.Start);
 });
 
