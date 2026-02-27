@@ -26,6 +26,10 @@ $Event(0, Default, function() {
     }
     $InitializeCommonEvent(0, 90065910, 49600200, 49600205, 49600800, 467010, 690047, 49605210, 49600800, 904960000, 0, 0, 0, 0);
     $InitializeCommonEvent(0, 90065911, 49600200, 49600800, 467010, 49605210, 49600800, 904960000, 0, 0, 0, 0, 0);
+    
+    // Animal spawn and despawn
+    //$InitializeCommonEvent(0, 90065128, 49606000);
+    
     if (!IsMapVariation(2)) {
         $InitializeCommonEvent(0, 90065900, 49600800, 1, 0, 0, 1050, 467010, 904960000, 49600800);
     }

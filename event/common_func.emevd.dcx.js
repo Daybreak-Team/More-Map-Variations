@@ -11076,6 +11076,24 @@ $Event(90065127, Restart, function(chrEntityId) {
     SetBossBGM(100800, BossBGMState.Stop2);
 });
 
+// Regal Ancestor Spirit animal spawns
+$Event(90065128, Restart, function(chrEntityId) {
+    // Despawn on day 1 start
+    WaitFor(EventFlag(7500));
+    DisableCharacter(chrEntityId);
+    DisableCharacterCollision(chrEntityId);
+    DisableCharacterAI(chrEntityId);
+    // Spawn on boss start
+    WaitFor(EventFlag(7504));
+    DisableCharacterCollision(chrEntityId);
+    EnableCharacter(chrEntityId);      
+    EnableCharacterAI(chrEntityId);
+    // Despawn on death
+    WaitFor(EventFlag(7502));
+    DisableCharacter(chrEntityId);
+    DisableCharacterAI(chrEntityId);    
+});
+
 $Event(90065130, Restart, function(chrEntityId, chrEntityId2, eventFlagId, eventFlagId2, nameId, eventFlagId3) {
     if (EventFlag(eventFlagId2)) {
         DisableCharacter(chrEntityId2);
