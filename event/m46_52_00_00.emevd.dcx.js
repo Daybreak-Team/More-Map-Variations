@@ -24,7 +24,7 @@ $Event(0, Default, function() {
     $InitializeCommonEvent(0, 90015002, 0, 0, 46520820, 46520820, 1020, 920210, 11290, 904811000, 46520820);
     $InitializeCommonEvent(0, 9005810, 46520820, 46520500, 46521500, 5);
     $InitializeCommonEvent(0, 90015005, 46521500, 46522800, 46520820);
-    $InitializeCommonEvent(0, 90015000, 0, 46520830, 903150600, 30, 0, 0);
+    $InitializeCommonEvent(0, 90015000, 0, 46520830, 903253500, 30, 0, 0);
     $InitializeCommonEvent(0, 90015030, 0, 46520830, 30, 920610, 0);
     $InitializeCommonEvent(0, 90015002, 0, 0, 46520830, 46520830, 1020, 920610, 11290, 903253500, 46520830);
     $InitializeCommonEvent(0, 9005810, 46520830, 46520500, 46521500, 5);
