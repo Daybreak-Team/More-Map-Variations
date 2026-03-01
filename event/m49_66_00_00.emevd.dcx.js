@@ -33,6 +33,8 @@ $Event(0, Default, function() {
     $InitializeCommonEvent(0, 90065126, 49660800);
     // Set BGM for phase 3 
     $InitializeCommonEvent(0, 90065127, 49660810);
+    // Stop BGM on death
+    $InitializeCommonEvent(0, 90065129, 49660810);    
     
     if (!IsMapVariation(2)) {
         $InitializeCommonEvent(0, 90065900, 49660800, 2, 0, 0, 1050, 100600, 904970000, 49660800);

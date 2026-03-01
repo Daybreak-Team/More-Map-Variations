@@ -11065,13 +11065,18 @@ L0:
     WaitFor(CharacterHPValue(chrEntityId) <= 0);
     SetBossBGM(100600, BossBGMState.Stop2);
     WaitFixedTimeSeconds(15.5);
-    SetBossBGM(100520, BossBGMState.Start);
+    if (CharacterHPValue(49660810) > 0)
+        SetBossBGM(100520, BossBGMState.Start);
 });
 
 // Gael BGM event phase 3
 $Event(90065127, Restart, function(chrEntityId) {
     WaitFor(CharacterHasSpEffect(chrEntityId, 20050004));
     SetBossBGM(100800, BossBGMState.HeatUp);
+});
+
+// Gael BGM stop on death
+$Event(90065129, Restart, function(chrEntityId) {
     WaitFor(CharacterHPValue(chrEntityId) <= 0);
     SetBossBGM(100800, BossBGMState.Stop2);
 });
