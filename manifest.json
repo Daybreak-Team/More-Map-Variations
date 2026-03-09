@@ -7,84 +7,16 @@
       "size": 62
     },
     ".gitignore": {
-      "hash": "45E53DB01BD12929D4C931A7522E1FFDCC4520AD",
-      "size": 383
+      "hash": "B818B77273961C25782804DADB0C309AE46D8C33",
+      "size": 428
     },
-    "generate manifest.bat": {
-      "hash": "CBAD00B30FC3D7D5014716D0467B41303DC03AB8",
-      "size": 34
-    },
-    "generate_manifest.py": {
-      "hash": "637DCF3679D4DEE8949A59F35D11F0681C120656",
-      "size": 774
-    },
-    "nighter.dll": {
-      "hash": "03A3502655A0FF182B2BD4D143159750C179FF7E",
-      "size": 502272
-    },
-    "nighter.json": {
-      "hash": "138D6C30566A42BF82666435088FD0C7FD8B3ACE",
-      "size": 280
-    },
-    "nrhkshotloader.dll": {
-      "hash": "C87D09C28E18019C6264C77F09D604B1C86F5A11",
-      "size": 110080
-    },
-    "nrpause.dll": {
-      "hash": "BCC040FFBEBB3905AA875BD4405C55351339A57D",
-      "size": 127488
-    },
-    "nrpause.ini": {
-      "hash": "BEE190118808D1A1EAC9A52655D881835CBFC807",
-      "size": 395
-    },
-    "nrsc_launcher.exe": {
-      "hash": "46558DEE2410C51311F185D4A0264AFFD16FA720",
-      "size": 209408
-    },
-    "nrsc_settings.ini": {
-      "hash": "DA39A3EE5E6B4B0D3255BFEF95601890AFD80709",
-      "size": 0
-    },
-    "project.json": {
-      "hash": "319FE067FB69CAB5AC7F72261E1A4E9952B3E493",
-      "size": 288
+    "manifest.json": {
+      "hash": "9D13F1C6F9BB04962D5C9AA69ABD3B1FFE15142F",
+      "size": 122296
     },
     "regulation.bin": {
       "hash": "73703EF7889D1A83F0ED5F2D5ABBADA42372BE45",
       "size": 3044816
-    },
-    "regulation.bin.prev": {
-      "hash": "73703EF7889D1A83F0ED5F2D5ABBADA42372BE45",
-      "size": 3044816
-    },
-    "StormControl.dll": {
-      "hash": "FF0B32831045AC178B625B452FE8AC86DCF10EDB",
-      "size": 912896
-    },
-    ".smithbox/Assets/Scripts/Project": {
-      "hash": "DA39A3EE5E6B4B0D3255BFEF95601890AFD80709",
-      "size": 0
-    },
-    ".smithbox/Assets/Scripts/Revert testing.txt": {
-      "hash": "40D41B8A45BFC096DA06FA69893F370142DECCE5",
-      "size": 645
-    },
-    ".smithbox/Assets/Scripts/Wylder seed 1 testing.txt": {
-      "hash": "705934E6C63F70FCB71F1CEC4816E695B5FBE6E3",
-      "size": 356
-    },
-    ".smithbox/MSB/Map List Filters.json": {
-      "hash": "F328C4DC645AAE77EC24F81CF7D74A2275B58BCB",
-      "size": 21
-    },
-    ".smithbox/MSB/Entity Selections/Selection Groups.json": {
-      "hash": "3B90C0EA4F2299B070B809B50B59641032902898",
-      "size": 20
-    },
-    ".smithbox/Project/Community Table Names/ItemTableParam.json": {
-      "hash": "E1116436D9C846592F1987FC1CE376B7A737E373",
-      "size": 176833
     },
     "action/eventnameid.txt": {
       "hash": "08A7091A4E2BBAE4EFCC714852C880D35B3C279A",
@@ -2018,41 +1950,17 @@
       "hash": "0D5380CAA60181F3C61F5CF87A597DD43E0C32AE",
       "size": 13056
     },
-    "event/common.emevd.dcx.bak": {
-      "hash": "0D5380CAA60181F3C61F5CF87A597DD43E0C32AE",
-      "size": 13056
-    },
     "event/common_func.emevd.dcx": {
       "hash": "9B304C30E68F8F55CE1C18533EC8F2F5E264FE30",
       "size": 75040
-    },
-    "event/common_func.emevd.dcx.bak": {
-      "hash": "1307799855CCF7C38172E9E3B9AFF0FA3835901C",
-      "size": 74384
     },
     "event/common_func.emevd.dcx.js": {
       "hash": "8B928A4D0B423C6FAC6003EC0724F2AFCC51B511",
       "size": 972692
     },
-    "event/m32_00_00_00.emevd.dcx.bak": {
-      "hash": "227ECC00A5EA2BC2B55E20CF6385723879C55A92",
-      "size": 1408
-    },
-    "event/m38_10_00_00.emevd.dcx.bak": {
-      "hash": "F431D5F5D0C19AF58C3341B2FBAD5CA420CAF286",
-      "size": 1280
-    },
-    "event/m38_20_00_00.emevd.dcx.bak": {
-      "hash": "88D166A4C6C968E9DE5B2591222E191C2B509FD2",
-      "size": 1280
-    },
     "event/m45_51_00_00.emevd.dcx": {
       "hash": "1E1DCF1EB2E24E08783B7889126A7221DEF131D4",
       "size": 880
-    },
-    "event/m45_51_00_00.emevd.dcx.bak": {
-      "hash": "1F51F53ADBB04EE55C4351C271D63C3F21E82584",
-      "size": 1008
     },
     "event/m45_51_00_00.emevd.dcx.js": {
       "hash": "46C1A0286BF758E4D2F152C8C8D667A2144AAD03",
@@ -2062,10 +1970,6 @@
       "hash": "26A5F59F308737D849DDC0EF70232571997121A1",
       "size": 896
     },
-    "event/m46_51_00_00.emevd.dcx.bak": {
-      "hash": "943727E84D6B0C6508B9014F55FDE440FF577CBB",
-      "size": 1136
-    },
     "event/m46_51_00_00.emevd.dcx.js": {
       "hash": "8C8E15840114808AD218BE8CC984608BF7AA1AA3",
       "size": 5812
@@ -2073,10 +1977,6 @@
     "event/m46_52_00_00.emevd.dcx": {
       "hash": "889350AD88B808A40FAA82EC0684AA56A5D53345",
       "size": 896
-    },
-    "event/m46_52_00_00.emevd.dcx.bak": {
-      "hash": "51D27F491FAEEBD3EF4E6747E1038EA3FDCBA114",
-      "size": 1120
     },
     "event/m46_52_00_00.emevd.dcx.js": {
       "hash": "7402E7B7B848B8117522359FE5AFC367CEAD8D59",
@@ -2086,10 +1986,6 @@
       "hash": "C7144103930596772828F40F659126F185484E27",
       "size": 864
     },
-    "event/m46_53_00_00.emevd.dcx.bak": {
-      "hash": "D9489F498DAAE388B52E59E33E3F165A60548F78",
-      "size": 1088
-    },
     "event/m46_53_00_00.emevd.dcx.js": {
       "hash": "BECB3D6390BCED3BA64CF0D2DF505EC3E6477533",
       "size": 3699
@@ -2097,10 +1993,6 @@
     "event/m46_54_00_00.emevd.dcx": {
       "hash": "05EF2691249819C6EDA64D5C954EB4879F7C70A5",
       "size": 896
-    },
-    "event/m46_54_00_00.emevd.dcx.bak": {
-      "hash": "3EC54B865801768862D06B181DA967D639DFF7D7",
-      "size": 1120
     },
     "event/m46_54_00_00.emevd.dcx.js": {
       "hash": "B326A074F4A31F72EA02FBEDF4E30F52981DE3E3",
@@ -2110,10 +2002,6 @@
       "hash": "04AE8A16EAAF7004B511C361F55B1C6F627B54D1",
       "size": 848
     },
-    "event/m46_55_00_00.emevd.dcx.bak": {
-      "hash": "DC535023C20F9EB488708F804ADC3297FD16757F",
-      "size": 1072
-    },
     "event/m46_55_00_00.emevd.dcx.js": {
       "hash": "9DB7EB321BA5C50BF396847D1C65835A3509C2E2",
       "size": 4262
@@ -2121,10 +2009,6 @@
     "event/m46_56_00_00.emevd.dcx": {
       "hash": "10E202BAFE2DB99E89D1A2E67904861A68E0A079",
       "size": 816
-    },
-    "event/m46_56_00_00.emevd.dcx.bak": {
-      "hash": "B719EB39A05A9ABB21D179A094A79E173B6C9AD3",
-      "size": 1008
     },
     "event/m46_56_00_00.emevd.dcx.js": {
       "hash": "7958DCB7FE6C393E2E67714A43230DA1BCF3C02A",
@@ -2134,10 +2018,6 @@
       "hash": "BF67DDD44845510AF448ADDDC4B003791FB2ED06",
       "size": 816
     },
-    "event/m46_57_00_00.emevd.dcx.bak": {
-      "hash": "1F31FCCD18433ABD90734D118F6497467E220059",
-      "size": 1040
-    },
     "event/m46_57_00_00.emevd.dcx.js": {
       "hash": "EB236F9805CE643DEF58880F4AFE471703D43D0E",
       "size": 3501
@@ -2145,10 +2025,6 @@
     "event/m46_58_00_00.emevd.dcx": {
       "hash": "20885E906FB52BB2E231CB26AF0BC514A8ADF9F7",
       "size": 880
-    },
-    "event/m46_58_00_00.emevd.dcx.bak": {
-      "hash": "713F0A9D4AD0ED20F203D778956ACF055532C0B5",
-      "size": 1056
     },
     "event/m46_58_00_00.emevd.dcx.js": {
       "hash": "C19C2B7A1FB5AA0E0766DF7FD26C637F0D9D4BBC",
@@ -2158,10 +2034,6 @@
       "hash": "68E714FC85BB952DCFD4D7F54DE5E2430C21335E",
       "size": 832
     },
-    "event/m46_59_00_00.emevd.dcx.bak": {
-      "hash": "9DEAA68EB063E91433B541D2267151234E12EAA8",
-      "size": 1088
-    },
     "event/m46_59_00_00.emevd.dcx.js": {
       "hash": "4292545B53253792B435236DB2EA0603E4BEF841",
       "size": 3505
@@ -2169,10 +2041,6 @@
     "event/m46_62_00_00.emevd.dcx": {
       "hash": "6332546A9B36D6AC6B7F37356A21AE30A4D4EB18",
       "size": 1024
-    },
-    "event/m46_62_00_00.emevd.dcx.bak": {
-      "hash": "CEC4E217DB9FDD1F579DE81D8F1985384CC79BA8",
-      "size": 1248
     },
     "event/m46_62_00_00.emevd.dcx.js": {
       "hash": "0FF25FD729F2991FF0EBB8F7653D26E1BAA47CD3",
@@ -2182,10 +2050,6 @@
       "hash": "E7CFD9C017F753E5F82B31650BC653B4FA6FB390",
       "size": 896
     },
-    "event/m46_63_00_00.emevd.dcx.bak": {
-      "hash": "BCE283AA88FB7373E5F841C525E102D1C5240961",
-      "size": 1136
-    },
     "event/m46_63_00_00.emevd.dcx.js": {
       "hash": "ACB2B89EFE9A08FD5BEB463F38194352CDB92932",
       "size": 3699
@@ -2193,10 +2057,6 @@
     "event/m46_64_00_00.emevd.dcx": {
       "hash": "3589E76B830A9FD95F68E1BE4B42AB810B0370B1",
       "size": 816
-    },
-    "event/m46_64_00_00.emevd.dcx.bak": {
-      "hash": "03D985EA00BD113F2DDC75049F95DC6CFD8F8DFE",
-      "size": 992
     },
     "event/m46_64_00_00.emevd.dcx.js": {
       "hash": "911DE9FC4F9B278B1F02C3003E89FFFBA57A7C64",
@@ -2206,10 +2066,6 @@
       "hash": "19FB84D170794184FEB8D86EA17842AC62DD8F63",
       "size": 816
     },
-    "event/m46_65_00_00.emevd.dcx.bak": {
-      "hash": "5CB9593E84EA48B69FDDDE6757180A45289A4560",
-      "size": 976
-    },
     "event/m46_65_00_00.emevd.dcx.js": {
       "hash": "3EE45E8F76FB09B8D6A62CB5006ED5C5790710C8",
       "size": 3505
@@ -2217,10 +2073,6 @@
     "event/m46_66_00_00.emevd.dcx": {
       "hash": "65C5E42E17F0AA6B476955854E9D4FBAB2E15CCF",
       "size": 896
-    },
-    "event/m46_66_00_00.emevd.dcx.bak": {
-      "hash": "9A824480E4544E88B43CEAED222536292B88C9B7",
-      "size": 1040
     },
     "event/m46_66_00_00.emevd.dcx.js": {
       "hash": "F8F4C060BE2BB83CBB29AD5C13C469A2811E19CB",
@@ -2230,10 +2082,6 @@
       "hash": "8BCD1B51644D7E0D2ADBF2A42B0462C792FDBA57",
       "size": 800
     },
-    "event/m46_67_00_00.emevd.dcx.bak": {
-      "hash": "08932EFEB32A09A3E79E85DBB490C7EDCE728F56",
-      "size": 992
-    },
     "event/m46_67_00_00.emevd.dcx.js": {
       "hash": "59D1B8D42BD8F0E5254CB7E3A42C592C8011C9C6",
       "size": 3501
@@ -2241,10 +2089,6 @@
     "event/m46_68_00_00.emevd.dcx": {
       "hash": "187AFC9503D739797788FAC19B33FF1E5CF2288F",
       "size": 816
-    },
-    "event/m46_68_00_00.emevd.dcx.bak": {
-      "hash": "4B5BD0B3DEF00BE152F9901FEA7E143E0AEDA812",
-      "size": 976
     },
     "event/m46_68_00_00.emevd.dcx.js": {
       "hash": "3B72A7FDCB86658F302F168F8DBCAD0CB9AF3D86",
@@ -2254,20 +2098,12 @@
       "hash": "ADE95521703BF2234FA82EC6B13BD6D1BD2F3203",
       "size": 992
     },
-    "event/m46_69_00_00.emevd.dcx.bak": {
-      "hash": "4E70D38B4843AEFD2E2C4A44C02E4FAEAB270B2E",
-      "size": 1104
-    },
     "event/m46_69_00_00.emevd.dcx.js": {
       "hash": "17961977E6229406540D0B96CB0C7C0A0DDADE43",
       "size": 6028
     },
     "event/m46_70_00_00.emevd.dcx": {
       "hash": "2050E5759B95052DE0DE6F2FAF2C54AB6D68ED32",
-      "size": 816
-    },
-    "event/m46_70_00_00.emevd.dcx.bak": {
-      "hash": "276D31F3713A17274F9297FBE7E60F21715C205D",
       "size": 816
     },
     "event/m46_70_00_00.emevd.dcx.js": {
@@ -2278,10 +2114,6 @@
       "hash": "B56C0F7FF683CCAD5E901E3EF9C378E90C2FCCBB",
       "size": 800
     },
-    "event/m46_71_00_00.emevd.dcx.bak": {
-      "hash": "0C2CB25DB72E22CECD9A795AC714BA96B492EC35",
-      "size": 1008
-    },
     "event/m46_71_00_00.emevd.dcx.js": {
       "hash": "5323D28F2A8D77B4AB0B5EA66FBE36DD63A2BB30",
       "size": 4031
@@ -2289,10 +2121,6 @@
     "event/m46_72_00_00.emevd.dcx": {
       "hash": "5463B37621601749818FD6E677903728B1E15DAB",
       "size": 880
-    },
-    "event/m46_72_00_00.emevd.dcx.bak": {
-      "hash": "259D791A4E621F21B67BE5B28D816ECB1B19A694",
-      "size": 1008
     },
     "event/m46_72_00_00.emevd.dcx.js": {
       "hash": "951132537DA34B0205CAA3DC365CE628628E9115",
@@ -2302,10 +2130,6 @@
       "hash": "D74320254ACAE8BCF0F38959FB25C072799CF20B",
       "size": 912
     },
-    "event/m46_74_00_00.emevd.dcx.bak": {
-      "hash": "2ADDC22A0274E44A21EB79E5055388C9F6D3F58E",
-      "size": 1072
-    },
     "event/m46_74_00_00.emevd.dcx.js": {
       "hash": "1D82ECCE26ABC2E3819F2FC2E3B1B585883017ED",
       "size": 4262
@@ -2313,10 +2137,6 @@
     "event/m46_77_00_00.emevd.dcx": {
       "hash": "C6841152C1DD9FD8294D85DA767A4FAF0079F000",
       "size": 912
-    },
-    "event/m46_77_00_00.emevd.dcx.bak": {
-      "hash": "CD63149660C8DB50B8DAFF0CAC871879B3579756",
-      "size": 1088
     },
     "event/m46_77_00_00.emevd.dcx.js": {
       "hash": "90F51EFFB8E4585CC81C4A4CFDAF6E7A8B8B0FE7",
@@ -2326,10 +2146,6 @@
       "hash": "896464C8139AB101F66BFD645700EE3334008171",
       "size": 848
     },
-    "event/m46_81_00_00.emevd.dcx.bak": {
-      "hash": "D01F1C629E84F32144FB442892F7869E5ED24273",
-      "size": 832
-    },
     "event/m46_81_00_00.emevd.dcx.js": {
       "hash": "0089AF67C369C2EF6FF5D71C83C507A804B8F287",
       "size": 4178
@@ -2337,10 +2153,6 @@
     "event/m46_82_00_00.emevd.dcx": {
       "hash": "74756502DC95F410CC8B03A8F8BA9D71E99C1EEA",
       "size": 864
-    },
-    "event/m46_82_00_00.emevd.dcx.bak": {
-      "hash": "500270CDAB8F0BE98E581272B93A6E238986269B",
-      "size": 832
     },
     "event/m46_82_00_00.emevd.dcx.js": {
       "hash": "BC358B28A49DE0EBB72655C7D3CED88442FFA54C",
@@ -2350,20 +2162,12 @@
       "hash": "CEE9C3CCA9DECF396EFFDFED0C14ECE719DB044A",
       "size": 848
     },
-    "event/m46_86_00_00.emevd.dcx.bak": {
-      "hash": "F768331E8484BA2F11F10703D8492E472B5A7820",
-      "size": 832
-    },
     "event/m46_86_00_00.emevd.dcx.js": {
       "hash": "C074CE032E4D46462732F6AA18EBFF260BD27137",
       "size": 4178
     },
     "event/m46_87_00_00.emevd.dcx": {
       "hash": "093827074BCCA9A7073BEC3507D8E646E48A3736",
-      "size": 832
-    },
-    "event/m46_87_00_00.emevd.dcx.bak": {
-      "hash": "5BA727890AE7E306DF942E7CD00B936490FE1114",
       "size": 832
     },
     "event/m46_87_00_00.emevd.dcx.js": {
@@ -2374,10 +2178,6 @@
       "hash": "5E1FE1123993B0CFA87BC9AA4B4A75F56E3150E7",
       "size": 816
     },
-    "event/m46_88_00_00.emevd.dcx.bak": {
-      "hash": "1E13B2E6E388B8FCC04305800E73ADB34AA12261",
-      "size": 816
-    },
     "event/m46_88_00_00.emevd.dcx.js": {
       "hash": "1F973AFBFD434FE6AA52C532A60E5F19074322AA",
       "size": 4178
@@ -2385,10 +2185,6 @@
     "event/m46_91_00_00.emevd.dcx": {
       "hash": "7AE642729B7894D1D35E0F367DB84A98461A2D5B",
       "size": 864
-    },
-    "event/m46_91_00_00.emevd.dcx.bak": {
-      "hash": "16C83BF22FBA1798135D0182B42A90E585F43D33",
-      "size": 816
     },
     "event/m46_91_00_00.emevd.dcx.js": {
       "hash": "6DE81E23D3FCCD78163463B190F10771D79DC8EB",
@@ -2398,10 +2194,6 @@
       "hash": "43DCD262E046546DE40B10780FB74D37C7C049B9",
       "size": 912
     },
-    "event/m46_95_00_00.emevd.dcx.bak": {
-      "hash": "B271B29F74FB47D73FDD6A1206F4BF96AC07D1C2",
-      "size": 880
-    },
     "event/m46_95_00_00.emevd.dcx.js": {
       "hash": "E3C2DA8CFB9A55DEE2EA823B70EF01BEB3DCFAC3",
       "size": 4380
@@ -2410,20 +2202,12 @@
       "hash": "C3D8E763F4D5ADD44955306943E13FB5F1CE1CC4",
       "size": 1088
     },
-    "event/m49_50_00_00.emevd.dcx.bak": {
-      "hash": "BC2E4C9AEDDFB56F88CEC2A135DE792FFBE08DDD",
-      "size": 1104
-    },
     "event/m49_50_00_00.emevd.dcx.js": {
       "hash": "06D6BB7BC9776E133178EB23E7096257B621BFE5",
       "size": 5634
     },
     "event/m49_51_00_00.emevd.dcx": {
       "hash": "B09155FE3EECDF76F442761602DED448DBDB4E0F",
-      "size": 1088
-    },
-    "event/m49_51_00_00.emevd.dcx.bak": {
-      "hash": "6FB349EE6EED2D3555EA77A46A311EF1CBE24A89",
       "size": 1088
     },
     "event/m49_51_00_00.emevd.dcx.js": {
@@ -2434,20 +2218,12 @@
       "hash": "177E7F1F261DF04456EF8C82955BC4EFB147AC85",
       "size": 1088
     },
-    "event/m49_52_00_00.emevd.dcx.bak": {
-      "hash": "91BB6EB0D31A79B7EA1B4BAF9B13F0E15868605E",
-      "size": 1088
-    },
     "event/m49_52_00_00.emevd.dcx.js": {
       "hash": "9A4277AEAE19B81EF2526F29C38408A0EF4A582B",
       "size": 5634
     },
     "event/m49_53_00_00.emevd.dcx": {
       "hash": "08F9043B5CA7598D467D7E5001FFDD337F324D2F",
-      "size": 1088
-    },
-    "event/m49_53_00_00.emevd.dcx.bak": {
-      "hash": "27F0C89788403DA8011045608993DDAB4DF6078A",
       "size": 1088
     },
     "event/m49_53_00_00.emevd.dcx.js": {
@@ -2458,10 +2234,6 @@
       "hash": "14007DF5087EED48812038DF6EA73C8B74A3B84F",
       "size": 1168
     },
-    "event/m49_54_00_00.emevd.dcx.bak": {
-      "hash": "3366EEC878CA12CB75ED2C571FCA5731664C56B8",
-      "size": 1088
-    },
     "event/m49_54_00_00.emevd.dcx.js": {
       "hash": "A866D7A0A14AE6FD590D2F782269EC8ED8E0EC4C",
       "size": 5831
@@ -2469,10 +2241,6 @@
     "event/m49_55_00_00.emevd.dcx": {
       "hash": "7C36CC7AE99041FDF3B0736B9BA0F6D4C80ED9AB",
       "size": 1168
-    },
-    "event/m49_55_00_00.emevd.dcx.bak": {
-      "hash": "1F91BCF609D09258AA4AC4BB4F6F4936D9D36843",
-      "size": 1088
     },
     "event/m49_55_00_00.emevd.dcx.js": {
       "hash": "23E08666E84FFBCEAC9F07EDBCDC2D1723332A1C",
@@ -2482,10 +2250,6 @@
       "hash": "A996EAEC72252ECF6F5E3E53EC58F8BC3C8E577A",
       "size": 1152
     },
-    "event/m49_56_00_00.emevd.dcx.bak": {
-      "hash": "C6DE0B627B98F6F3138EEBF231D6BDC526E1816C",
-      "size": 1088
-    },
     "event/m49_56_00_00.emevd.dcx.js": {
       "hash": "40D6657CF184E3DAEA8E3F5F0965483FEC2AA2E4",
       "size": 5721
@@ -2494,20 +2258,12 @@
       "hash": "1F6BCFBCD2B551CF517C6D26917B7A81170FCB41",
       "size": 1168
     },
-    "event/m49_57_00_00.emevd.dcx.bak": {
-      "hash": "51CFF258C0BE62C01FDF3347425B9E5B0138B659",
-      "size": 1088
-    },
     "event/m49_57_00_00.emevd.dcx.js": {
       "hash": "051C646D47E0F5B822C28A54B072C52C717251F0",
       "size": 5831
     },
     "event/m49_58_00_00.emevd.dcx": {
       "hash": "B60C3592B0FFFF95EED5024BA8C7A58F9A18A996",
-      "size": 1104
-    },
-    "event/m49_58_00_00.emevd.dcx.bak": {
-      "hash": "C5EA83EBDF0B6709823E2645DAB28B5EA40F493F",
       "size": 1104
     },
     "event/m49_58_00_00.emevd.dcx.js": {
@@ -2518,10 +2274,6 @@
       "hash": "8A3516F9BD9068DECE28373232DE4457E7713572",
       "size": 1168
     },
-    "event/m49_59_00_00.emevd.dcx.bak": {
-      "hash": "EB30FBBB8A473577EEEED34DBDA3EC50E88C5FDB",
-      "size": 1088
-    },
     "event/m49_59_00_00.emevd.dcx.js": {
       "hash": "B844A47B67C9411EDB56974354992D3B15244DF8",
       "size": 5831
@@ -2530,20 +2282,12 @@
       "hash": "244F13B23DF20D1A59BED909D9F2CE295707834F",
       "size": 1104
     },
-    "event/m49_60_00_00.emevd.dcx.bak": {
-      "hash": "21FA4E411E611338F3BCB166055317E43281B627",
-      "size": 1088
-    },
     "event/m49_60_00_00.emevd.dcx.js": {
       "hash": "E5C87A921D5E3CC6189B412E710176375348EA6D",
       "size": 5733
     },
     "event/m49_61_00_00.emevd.dcx": {
       "hash": "7037D07D5395454686CC0381510728E6C4891DEF",
-      "size": 1104
-    },
-    "event/m49_61_00_00.emevd.dcx.bak": {
-      "hash": "657F386E30B743E11687DF185EE1030E42B1970B",
       "size": 1104
     },
     "event/m49_61_00_00.emevd.dcx.js": {
@@ -2554,10 +2298,6 @@
       "hash": "2BBEC76A16E6081EDCF6A18640241153AB54F146",
       "size": 1152
     },
-    "event/m49_62_00_00.emevd.dcx.bak": {
-      "hash": "EB30FBBB8A473577EEEED34DBDA3EC50E88C5FDB",
-      "size": 1088
-    },
     "event/m49_62_00_00.emevd.dcx.js": {
       "hash": "1FCE685D1E3F7FC59FDDF2F4B30E3E3F5096419A",
       "size": 5831
@@ -2565,10 +2305,6 @@
     "event/m49_63_00_00.emevd.dcx": {
       "hash": "E05AE1804AF18A9200F600F0FE1B53320AADA9C9",
       "size": 1136
-    },
-    "event/m49_63_00_00.emevd.dcx.bak": {
-      "hash": "EB30FBBB8A473577EEEED34DBDA3EC50E88C5FDB",
-      "size": 1088
     },
     "event/m49_63_00_00.emevd.dcx.js": {
       "hash": "1A3F171EEB55BFCA53C3C4C58952525F7724A736",
@@ -2578,10 +2314,6 @@
       "hash": "3DA1A51E5508135B40F3D6504D1366C964E833B5",
       "size": 1136
     },
-    "event/m49_64_00_00.emevd.dcx.bak": {
-      "hash": "EB30FBBB8A473577EEEED34DBDA3EC50E88C5FDB",
-      "size": 1088
-    },
     "event/m49_64_00_00.emevd.dcx.js": {
       "hash": "A5E8997D839A2E761DC2D6B73D394B506B9E71EC",
       "size": 5831
@@ -2589,10 +2321,6 @@
     "event/m49_65_00_00.emevd.dcx": {
       "hash": "9C82783F1D6D88B927DDE695678B947F50CB1855",
       "size": 1168
-    },
-    "event/m49_65_00_00.emevd.dcx.bak": {
-      "hash": "EB30FBBB8A473577EEEED34DBDA3EC50E88C5FDB",
-      "size": 1088
     },
     "event/m49_65_00_00.emevd.dcx.js": {
       "hash": "BA2EDDBC3B79AEE8E214FD11E00284BF7EA4FB72",
@@ -2602,10 +2330,6 @@
       "hash": "E7BC985A1053AE8146C5F833F8E653291D3E677D",
       "size": 1248
     },
-    "event/m49_66_00_00.emevd.dcx.bak": {
-      "hash": "EB30FBBB8A473577EEEED34DBDA3EC50E88C5FDB",
-      "size": 1088
-    },
     "event/m49_66_00_00.emevd.dcx.js": {
       "hash": "FCFE783690ED2B599C129B130186965DFC13F295",
       "size": 7246
@@ -2614,20 +2338,12 @@
       "hash": "F92C6C8248C208E0BBF72544E449150DBDBD0C43",
       "size": 1152
     },
-    "event/m49_67_00_00.emevd.dcx.bak": {
-      "hash": "EB30FBBB8A473577EEEED34DBDA3EC50E88C5FDB",
-      "size": 1088
-    },
     "event/m49_67_00_00.emevd.dcx.js": {
       "hash": "B3E1CCFF461E7B8338C468E07EEC12A3DBDD235E",
       "size": 5831
     },
     "event/m49_68_00_00.emevd.dcx": {
       "hash": "6EA7C0F716A46B7EFB5AE093F4F353B152FF8245",
-      "size": 1088
-    },
-    "event/m49_68_00_00.emevd.dcx.bak": {
-      "hash": "EB30FBBB8A473577EEEED34DBDA3EC50E88C5FDB",
       "size": 1088
     },
     "event/m49_68_00_00.emevd.dcx.js": {
@@ -2638,10 +2354,6 @@
       "hash": "4373B80177E3D9548FDBD1A77AD8DF928536D0AC",
       "size": 1168
     },
-    "event/m49_69_00_00.emevd.dcx.bak": {
-      "hash": "EB30FBBB8A473577EEEED34DBDA3EC50E88C5FDB",
-      "size": 1088
-    },
     "event/m49_69_00_00.emevd.dcx.js": {
       "hash": "2E454049E1FCCF20A071ED0A0DB64B46345FF332",
       "size": 5831
@@ -2649,10 +2361,6 @@
     "event/m49_70_00_00.emevd.dcx": {
       "hash": "92E158DF377B1F451DA7813486F8583F8C6087FB",
       "size": 1104
-    },
-    "map/mapstudio/m10_00_00_00.msb.dcx": {
-      "hash": "E4D2A59DA9E391C8F0AB1171AA50F38433336F28",
-      "size": 142952
     },
     "map/mapstudio/m45_51_00_00.msb.dcx": {
       "hash": "662737F54D97E6A1372DA01AE091870B97A48551",
@@ -3762,22 +3470,6 @@
       "hash": "104423BC76214C024F886F6BBB9AE3618941D652",
       "size": 12390263
     },
-    "SeamlessCoop/nrsc.dll": {
-      "hash": "0C78B14F91E0C74D4C849813560EC32D20D6188A",
-      "size": 6538256
-    },
-    "SeamlessCoop/nrsc_settings.ini": {
-      "hash": "41356D5DEEA5079BB0006248DD89CC8C9709C3FE",
-      "size": 246
-    },
-    "SeamlessCoop/crashpad/crashpad_handler.exe": {
-      "hash": "424485B95DC7D9F3073F401FCB85B155A6F1D62B",
-      "size": 824832
-    },
-    "SeamlessCoop/locale/english.json": {
-      "hash": "23006A3C11513674E51A80D1CCF4C460EE4548A0",
-      "size": 536
-    },
     "sfx/sfxbnd_c0000.ffxbnd.dcx": {
       "hash": "6970F2366531AA24C1B0EF82F9751ED7E5FC7C12",
       "size": 134438752
@@ -3905,18 +3597,6 @@
     "sfx/sfxbnd_c5661.ffxbnd.dcx": {
       "hash": "8933F01EECEEC6BD070BCEA303D9681FD47E2DF2",
       "size": 105360
-    },
-    "StormControl/config.ini": {
-      "hash": "953C315519EB687156682CA7FD83812523F9DF02",
-      "size": 1338
-    },
-    "StormControl/log.txt": {
-      "hash": "7C7BEBF2AE981D9EB273B2CB619F141B51A4B0EB",
-      "size": 1515
-    },
-    "StormControl/profiles/Example.ini": {
-      "hash": "3D4FC53C6BB960E5E3CAF881B7B9231D7D6669C8",
-      "size": 1580
     }
   }
 }
