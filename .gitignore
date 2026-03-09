@@ -16,3 +16,5 @@ nighter.json
 nrhkshotloader.dll
 nrpause.dll
 nrpause.ini
+generate manifest.bat
+generate_manifest.py
