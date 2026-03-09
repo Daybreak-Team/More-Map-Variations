@@ -3,16 +3,16 @@
   "base_url": "https://raw.githubusercontent.com/Blabla132132/More-Map-Variation/master/",
   "files": {
     ".gitattributes": {
-      "hash": "29BEE890D0510A5F7CC8474EBDDB7D1E327CE8E4",
-      "size": 62
+      "hash": "648C1EC5A118CFAC1EB0D6AB847394D4BBA8F673",
+      "size": 69
     },
     ".gitignore": {
       "hash": "B818B77273961C25782804DADB0C309AE46D8C33",
       "size": 428
     },
     "manifest.json": {
-      "hash": "9D13F1C6F9BB04962D5C9AA69ABD3B1FFE15142F",
-      "size": 122296
+      "hash": "F80A95BD0111F1A137074125CE05B7BC19F624E6",
+      "size": 112034
     },
     "regulation.bin": {
       "hash": "73703EF7889D1A83F0ED5F2D5ABBADA42372BE45",
