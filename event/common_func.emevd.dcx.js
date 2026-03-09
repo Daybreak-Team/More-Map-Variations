@@ -21428,3 +21428,8 @@ $Event(90005934, Default, function(eventFlagId, tutorialParamId) {
     WaitFor(flag);
     ShowTutorialPopup(tutorialParamId, false, true);
 });
+
+// Radahn meteor targeting
+$Event(90050000, Default, function(entityId) {
+    SetCharacterEventTarget(entityId, 49562000);
+});
