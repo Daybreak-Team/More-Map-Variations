@@ -2,14 +2,6 @@
   "version": 1,
   "base_url": "https://raw.githubusercontent.com/Blabla132132/More-Map-Variation/master/",
   "files": {
-    ".gitignore": {
-      "hash": "B818B77273961C25782804DADB0C309AE46D8C33",
-      "size": 428
-    },
-    "generate_manifest.py": {
-      "hash": "6E1F1D316096D401B82A5F45F8AC11EEB7C473C2",
-      "size": 1834
-    },
     "regulation.bin": {
       "hash": "73703EF7889D1A83F0ED5F2D5ABBADA42372BE45",
       "size": 3044816
