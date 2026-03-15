@@ -11234,6 +11234,61 @@ L0:
     SetNetworkconnectedEventFlagID(eventFlagId4, ON);
 });
 
+
+$Event(90065133, Restart, function() {
+    SetCharacterEventTarget(49560800, 49560801);
+});
+
+//teleport stuff for very secret n2 boss
+
+$Event(90065134, Restart, function() {
+    WaitFor(CharacterHasSpEffect(49560800, 960000));
+    WarpCharacterAndCopyFloor(49560800, TargetEntityType.Character, 49560802, 900, 49560802);
+    ForceAnimationPlayback(49560800, 20020, false, false, false);
+    WaitFor(CharacterHasSpEffect(49560800, 960001));
+    WarpCharacterAndCopyFloor(49560800, TargetEntityType.Character, 49560805, 900, 49560805);
+    ForceAnimationPlayback(49560800, 20021, false, false, false);
+    WaitFor(CharacterHasSpEffect(49560800, 960002));
+    ForceAnimationPlayback(49560800, 20022, false, false, false);
+    WaitFixedTimeSeconds(0.5);
+    WarpCharacterAndCopyFloor(49560800, TargetEntityType.Character, 49560803, 900, 49560803);
+    WaitFor(CharacterHasSpEffect(49560800, 960003));
+    ForceAnimationPlayback(49560800, 20023, false, false, false);
+    WarpCharacterAndCopyFloor(49560800, TargetEntityType.Character, 49560806, 900, 49560806);
+    WaitFor(CharacterHasSpEffect(49560800, 960004));
+    WarpCharacterAndCopyFloor(49560800, TargetEntityType.Character, 49560807, 900, 49560807);
+    WaitFor(CharacterHasSpEffect(49560800, 960005));
+    ForceAnimationPlayback(49560800, 20025, false, false, false);
+    WarpCharacterAndCopyFloor(49560800, TargetEntityType.Character, 49560804, 900, 49560804);
+    RestartEvent();
+});
+
+$Event(90065135, Restart, function() {
+    WaitFor(CharacterHasSpEffect(49560800, 960006));
+    RestartIf(CharacterHasSpEffect(49560800, 46033));
+    ForceAnimationPlayback(49560800, 20005, false, false, false);
+    RestartEvent();
+});
+
+//radahn meteor failsafe 
+
+$Event(90065136, Restart, function() {
+    WaitFor(CharacterHasSpEffect(49560800, 46033));
+    WaitFixedTimeSeconds(4);
+    if (!CharacterHasSpEffect(49560800, 5480))
+    {
+        ForceAnimationPlayback(49560800, 3034, false, false, false);
+        WaitFixedTimeSeconds(3);
+        if (!CharacterHasSpEffect(49560800, 5480))
+        {
+            ForceAnimationPlayback(49560800, 3037, false, false, false);
+        }
+    }
+    
+    RestartEvent();
+});
+
+
 $Event(90065140, Default, function(chrEntityId) {
     EndIf(!IsMapVariation(2));
     WaitFor(CharacterHasSpEffect(chrEntityId, 16241));
@@ -21427,9 +21482,4 @@ $Event(90005934, Default, function(eventFlagId, tutorialParamId) {
     }
     WaitFor(flag);
     ShowTutorialPopup(tutorialParamId, false, true);
-});
-
-// Radahn meteor targeting
-$Event(90050000, Default, function(entityId) {
-    SetCharacterEventTarget(entityId, 49562000);
 });

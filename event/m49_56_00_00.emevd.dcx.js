@@ -32,9 +32,11 @@ $Event(0, Default, function() {
     $InitializeCommonEvent(0, 90015012, 49565210, 49560200);
     $InitializeCommonEvent(1, 90015012, 0, 49560200);
     $InitializeCommonEvent(0, 90015020, 49560200, 49560800);
+    $InitializeCommonEvent(0, 90065133);
+    $InitializeCommonEvent(0, 90065134);
+    $InitializeCommonEvent(0, 90065136);
+    $InitializeCommonEvent(0, 90065135);
     $InitializeCommonEvent(0, 90015008, 49560205, 49560800, 475000, 49560800, 14771, 0);
-    // Meteor targeting dummy npc
-    $InitializeCommonEvent(0, 90050000, 49560800);
     if (IsMapVariation(2)) {
         $InitializeCommonEvent(0, 90015443, 49562200, 49560800);
         $InitializeCommonEvent(0, 90015023, 49560200, 40, 0, 49565210, 49560800, 904956000, 0, 0, 0, 0);
