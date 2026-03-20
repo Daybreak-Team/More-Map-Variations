@@ -46,8 +46,6 @@ S1:
     $InitializeCommonEvent(0, 90015016, 46860810);
     $InitializeCommonEvent(0, 90015015, 46860820);
     $InitializeCommonEvent(0, 90015016, 46860820);
-    $InitializeCommonEvent(0, 90015015, 46860830);
-    $InitializeCommonEvent(0, 90015016, 46860830);
     if (EventFlag(7604)) {
         $InitializeCommonEvent(0, 90015071, 46860800);
         $InitializeCommonEvent(0, 90015468, 46860800, 8270, 8247);
@@ -78,5 +76,3 @@ $Event(46552200, Default, function(chrEntityId) {
     DisableCharacter(chrEntityId);
     DisableCharacterCollision(chrEntityId);
 });
-
-
