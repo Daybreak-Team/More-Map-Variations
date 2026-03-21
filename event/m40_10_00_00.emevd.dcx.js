@@ -33,7 +33,7 @@ L0:
     DeleteMapSFX(40101598, 0);
     PlaySE(40101597, SoundType.SFX, 1500);
     WaitFixedTimeSeconds(0.5);
-    RecordUserDispLog(11220, 40101599, LogObjectType.None, -1);
+    RecordUserDispLog(11225, 40101599, LogObjectType.None, -1);
 });
 
 
@@ -97,11 +97,9 @@ $Event(40102590, Restart, function(mapVariationId, assetEntityId, eventFlagId) {
         EndEvent();
     }
 L0:
-    WaitFor(CharacterHPValue(40100000) <= 0);
+    WaitFor(CharacterRatioDead(40105000));
     SetSpEffect(10002, 1605000);
     SetNetworkconnectedEventFlagID(eventFlagId, ON);
     SetNetworkconnectedEventFlagID(40100502, ON);
     SetNetworkconnectedEventFlagID(40100500, ON);
 });
-
-
