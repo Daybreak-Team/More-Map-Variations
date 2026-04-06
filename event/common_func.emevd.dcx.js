@@ -11322,7 +11322,7 @@ $Event(90065137, Restart, function(chrEntityId, chrEntityId2, eventFlagId, event
     }
 });
 
-
+// black knight duo spawn
 $Event(90065138, Restart, function(chrEntityId, chrEntityId2, eventFlagId, eventFlagId2, nameId, eventFlagId3, eventFlagId4) {
     if (EventFlag(eventFlagId2)) {
         DisableCharacter(chrEntityId2);
@@ -11381,6 +11381,180 @@ $Event(90065140, Default, function(chrEntityId) {
     }
     WaitFixedTimeSeconds(1);
     RestartEvent();
+});
+
+// fire knight trio spawn
+$Event(90065141, Restart, function(chrEntityId, chrEntityId2, chrEntityId3, eventFlagId, eventFlagId2, nameId, eventFlagId3) {
+    if (EventFlag(eventFlagId2)) {
+        DisableCharacter(chrEntityId3);
+        DisableCharacterAI(chrEntityId3);
+        ForceCharacterDeath(chrEntityId3, false);
+        EndEvent();
+    }
+    if (EventFlag(eventFlagId3)) {
+        EnableCharacter(chrEntityId3);
+        EnableCharacterAI(chrEntityId3);
+        EndIf(IsMapVariation(2));
+        DisplayBossHealthBar(Enabled, chrEntityId3, 0, nameId);
+        LinkToBossHealthBar(Enabled, nameId, chrEntityId3);
+        EndEvent();
+    }
+    DisableCharacter(chrEntityId3);
+    DisableCharacterAI(chrEntityId3);
+    WaitFor(EventFlag(eventFlagId));
+    WaitFor((HPRatio(chrEntityId) <= 0.0 && HPRatio(chrEntityId2) <= 1.0) ||
+            (HPRatio(chrEntityId) <= 0.1 && HPRatio(chrEntityId2) <= 0.9) ||
+            (HPRatio(chrEntityId) <= 0.2 && HPRatio(chrEntityId2) <= 0.8) ||
+            (HPRatio(chrEntityId) <= 0.3 && HPRatio(chrEntityId2) <= 0.7) ||
+            (HPRatio(chrEntityId) <= 0.4 && HPRatio(chrEntityId2) <= 0.6) ||
+            (HPRatio(chrEntityId) <= 0.5 && HPRatio(chrEntityId2) <= 0.5) ||
+            (HPRatio(chrEntityId) <= 0.6 && HPRatio(chrEntityId2) <= 0.4) ||
+            (HPRatio(chrEntityId) <= 0.7 && HPRatio(chrEntityId2) <= 0.3) ||
+            (HPRatio(chrEntityId) <= 0.8 && HPRatio(chrEntityId2) <= 0.2) ||
+            (HPRatio(chrEntityId) <= 0.9 && HPRatio(chrEntityId2) <= 0.1) ||
+            (HPRatio(chrEntityId) <= 1.0 && HPRatio(chrEntityId2) <= 0.0));
+    SpawnOneshotSFX(TargetEntityType.Character, chrEntityId3, 900, 690048);
+    SetNetworkUpdateRate(chrEntityId3, true, CharacterUpdateFrequency.AlwaysUpdate);
+    DisableCharacterHPBarDisplay(chrEntityId3);
+    WaitFor(ElapsedSeconds(4));
+    EnableCharacter(chrEntityId3);
+    EnableCharacterAI(chrEntityId3);
+    ForceRatioAnimationPlayback(chrEntityId3, 20026, false, false, false);
+    SetNetworkconnectedEventFlagID(eventFlagId3, ON);
+    if (!IsMapVariation(2)) {
+        DisplayBossHealthBar(Enabled, chrEntityId3, 0, nameId);
+        LinkToBossHealthBar(Enabled, nameId, chrEntityId3);
+    }
+});
+
+// fire knight trio spawn
+$Event(90065142, Restart, function(chrEntityId, chrEntityId2, chrEntityId3, eventFlagId, eventFlagId2, nameId, eventFlagId3, eventFlagId4) {
+    if (EventFlag(eventFlagId2)) {
+        DisableCharacter(chrEntityId3);
+        DisableCharacterAI(chrEntityId3);
+        ForceCharacterDeath(chrEntityId3, false);
+        EndEvent();
+    }
+    if (EventFlag(eventFlagId4)) {
+        DisableCharacter(chrEntityId3);
+        DisableCharacterAI(chrEntityId3);
+        ForceCharacterDeath(chrEntityId3, false);
+        EndEvent();
+    }
+    WaitFixedTimeFrames(1);
+    if (!CharacterHasSpEffect(chrEntityId, 14601) && EventFlag(eventFlagId3)) {
+        SetNetworkconnectedEventFlagID(eventFlagId3, OFF);
+    }
+    if (EventFlag(eventFlagId3)) {
+        EnableCharacter(chrEntityId3);
+        EnableCharacterAI(chrEntityId3);
+    } else {
+        DisableCharacter(chrEntityId3);
+        DisableCharacterAI(chrEntityId3);
+        WaitFor(EventFlag(eventFlagId));
+        WaitFor((HPRatio(chrEntityId) <= 0.0 && HPRatio(chrEntityId2) <= 1.0) ||
+            (HPRatio(chrEntityId) <= 0.1 && HPRatio(chrEntityId2) <= 0.9) ||
+            (HPRatio(chrEntityId) <= 0.2 && HPRatio(chrEntityId2) <= 0.8) ||
+            (HPRatio(chrEntityId) <= 0.3 && HPRatio(chrEntityId2) <= 0.7) ||
+            (HPRatio(chrEntityId) <= 0.4 && HPRatio(chrEntityId2) <= 0.6) ||
+            (HPRatio(chrEntityId) <= 0.5 && HPRatio(chrEntityId2) <= 0.5) ||
+            (HPRatio(chrEntityId) <= 0.6 && HPRatio(chrEntityId2) <= 0.4) ||
+            (HPRatio(chrEntityId) <= 0.7 && HPRatio(chrEntityId2) <= 0.3) ||
+            (HPRatio(chrEntityId) <= 0.8 && HPRatio(chrEntityId2) <= 0.2) ||
+            (HPRatio(chrEntityId) <= 0.9 && HPRatio(chrEntityId2) <= 0.1) ||
+            (HPRatio(chrEntityId) <= 1.0 && HPRatio(chrEntityId2) <= 0.0));
+        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId3, 900, 690048);
+        SetNetworkUpdateRate(chrEntityId3, true, CharacterUpdateFrequency.AlwaysUpdate);
+        DisableCharacterHPBarDisplay(chrEntityId3);
+        WaitFor(ElapsedSeconds(4));
+        EnableCharacter(chrEntityId3);
+        EnableCharacterAI(chrEntityId3);
+        ForceRatioAnimationPlayback(chrEntityId3, 20026, false, false, false);
+        SetNetworkconnectedEventFlagID(eventFlagId3, ON);
+        if (!IsMapVariation(2)) {
+            DisplayBossHealthBar(Enabled, chrEntityId3, 0, nameId);
+            LinkToBossHealthBar(Enabled, nameId, chrEntityId3);
+        }
+    }
+L0:
+    WaitFor(CharacterDead(chrEntityId3));
+    SetNetworkconnectedEventFlagID(eventFlagId4, ON);
+});
+
+// fire knight trio spawn
+$Event(90065143, Restart, function(eventFlagId, eventFlagId2, eventFlagId3, bgmBossConvParamId, sfxId, chrEntityId, chrEntityId2, nameId, chrEntityId3, nameId2, chrEntityId4, nameId3) {
+    if (EventFlag(eventFlagId3)) {
+        DisableCharacter(chrEntityId);
+        DisableCharacterAI(chrEntityId);
+        ForceCharacterDeath(chrEntityId, false);
+        EndEvent();
+    }
+    if (EventFlag(eventFlagId2)) {
+        SetNetworkUpdateRate(chrEntityId2, true, CharacterUpdateFrequency.AlwaysUpdate);
+        DisableCharacterHPBarDisplay(chrEntityId2);
+        EnableCharacter(chrEntityId2);
+        EnableCharacterAI(chrEntityId2);
+        SetNetworkUpdateRate(chrEntityId3, true, CharacterUpdateFrequency.AlwaysUpdate);
+        DisableCharacterHPBarDisplay(chrEntityId3);
+        EnableCharacter(chrEntityId3);
+        EnableCharacterAI(chrEntityId3);
+        EndIf(IsMapVariation(2));
+        SetBossBGM(bgmBossConvParamId, BossBGMState.Start);
+        DisplayBossHealthBar(Enabled, chrEntityId2, 1, nameId);
+        DisplayBossHealthBar(Enabled, chrEntityId3, 1, nameId2);
+        LinkToBossHealthBar(Disabled, nameId, 0);
+        LinkToBossHealthBar(Disabled, nameId2, 0);
+        LinkToBossHealthBar(Enabled, nameId, chrEntityId2);
+        LinkToBossHealthBar(Enabled, nameId2, chrEntityId3);
+        if (0 != 0) {
+            DisplayBossHealthBar(Enabled, chrEntityId3, 0, nameId2);
+        }
+        if (0 != 0) {
+            DisplayBossHealthBar(Enabled, chrEntityId4, 2, nameId3);
+        }
+        EndEvent();
+    }
+L10:
+    DisableCharacter(chrEntityId);
+    DisableCharacterAI(chrEntityId);
+    WaitFor(EventFlag(eventFlagId));
+    if (IsMapVariation(1)) {
+        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 900, 690050);
+        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId3, 900, 690050);
+        WaitFor(ElapsedSeconds(2.5));
+    }
+    if (!IsMapVariation(2)) {
+        SetBossBGM(bgmBossConvParamId, BossBGMState.Start);
+    }
+    SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 900, sfxId);
+    SetNetworkUpdateRate(chrEntityId2, true, CharacterUpdateFrequency.AlwaysUpdate);
+    DisableCharacterHPBarDisplay(chrEntityId2);
+    SpawnOneshotSFX(TargetEntityType.Character, chrEntityId3, 900, sfxId);
+    SetNetworkUpdateRate(chrEntityId3, true, CharacterUpdateFrequency.AlwaysUpdate);
+    DisableCharacterHPBarDisplay(chrEntityId3);
+    WaitFor(ElapsedSeconds(4));
+    ForceAnimationPlayback(chrEntityId2, 20026, false, false, false);
+    EnableCharacter(chrEntityId2);
+    EnableCharacterAI(chrEntityId2);
+    ForceAnimationPlayback(chrEntityId3, 20026, false, false, false);
+    EnableCharacter(chrEntityId3);
+    EnableCharacterAI(chrEntityId3);
+    if (!IsMapVariation(2)) {
+        LinkToBossHealthBar(Disabled, nameId, 0);
+    }
+    if (!IsMapVariation(2)) {
+        DisplayBossHealthBar(Enabled, chrEntityId2, 1, nameId);
+        LinkToBossHealthBar(Enabled, nameId, chrEntityId2);
+        DisplayBossHealthBar(Enabled, chrEntityId3, 1, nameId2);
+        LinkToBossHealthBar(Enabled, nameId, chrEntityId3);
+        if (0 != 0) {
+            DisplayBossHealthBar(Enabled, chrEntityId3, 0, nameId2);
+        }
+        if (0 != 0) {
+            DisplayBossHealthBar(Enabled, chrEntityId4, 2, nameId3);
+        }
+    }
+    SetNetworkconnectedEventFlagID(eventFlagId2, ON);
 });
 
 $Event(90065201, Restart, function(eventFlagId, eventFlagId2, eventFlagId3, bgmBossConvParamId, sfxId, chrEntityId, chrEntityId2, nameId, chrEntityId3, nameId2) {
