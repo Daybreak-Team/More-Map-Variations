@@ -11288,6 +11288,84 @@ $Event(90065136, Restart, function() {
     RestartEvent();
 });
 
+// black knight duo spawn
+$Event(90065137, Restart, function(chrEntityId, chrEntityId2, eventFlagId, eventFlagId2, nameId, eventFlagId3) {
+    if (EventFlag(eventFlagId2)) {
+        DisableCharacter(chrEntityId2);
+        DisableCharacterAI(chrEntityId2);
+        ForceCharacterDeath(chrEntityId2, false);
+        EndEvent();
+    }
+    if (EventFlag(eventFlagId3)) {
+        EnableCharacter(chrEntityId2);
+        EnableCharacterAI(chrEntityId2);
+        EndIf(IsMapVariation(2));
+        DisplayBossHealthBar(Enabled, chrEntityId2, 0, nameId);
+        LinkToBossHealthBar(Enabled, nameId, chrEntityId2);
+        EndEvent();
+    }
+    DisableCharacter(chrEntityId2);
+    DisableCharacterAI(chrEntityId2);
+    WaitFor(EventFlag(eventFlagId));
+    WaitFor(HPRatio(chrEntityId) <= 0.8 || CharacterHasSpEffect(chrEntityId, 14601));
+    SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 900, 690048);
+    SetNetworkUpdateRate(chrEntityId2, true, CharacterUpdateFrequency.AlwaysUpdate);
+    DisableCharacterHPBarDisplay(chrEntityId2);
+    WaitFor(ElapsedSeconds(4));
+    EnableCharacter(chrEntityId2);
+    EnableCharacterAI(chrEntityId2);
+    ForceRatioAnimationPlayback(chrEntityId2, 20026, false, false, false);
+    SetNetworkconnectedEventFlagID(eventFlagId3, ON);
+    if (!IsMapVariation(2)) {
+        DisplayBossHealthBar(Enabled, chrEntityId2, 0, nameId);
+        LinkToBossHealthBar(Enabled, nameId, chrEntityId2);
+    }
+});
+
+
+$Event(90065138, Restart, function(chrEntityId, chrEntityId2, eventFlagId, eventFlagId2, nameId, eventFlagId3, eventFlagId4) {
+    if (EventFlag(eventFlagId2)) {
+        DisableCharacter(chrEntityId2);
+        DisableCharacterAI(chrEntityId2);
+        ForceCharacterDeath(chrEntityId2, false);
+        EndEvent();
+    }
+    if (EventFlag(eventFlagId4)) {
+        DisableCharacter(chrEntityId2);
+        DisableCharacterAI(chrEntityId2);
+        ForceCharacterDeath(chrEntityId2, false);
+        EndEvent();
+    }
+    WaitFixedTimeFrames(1);
+    if (!CharacterHasSpEffect(chrEntityId, 14601) && EventFlag(eventFlagId3)) {
+        SetNetworkconnectedEventFlagID(eventFlagId3, OFF);
+    }
+    if (EventFlag(eventFlagId3)) {
+        EnableCharacter(chrEntityId2);
+        EnableCharacterAI(chrEntityId2);
+    } else {
+        DisableCharacter(chrEntityId2);
+        DisableCharacterAI(chrEntityId2);
+        WaitFor(EventFlag(eventFlagId));
+        WaitFor(HPRatio(chrEntityId) <= 0.8 || CharacterHasSpEffect(chrEntityId, 14601));
+        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 900, 690048);
+        SetNetworkUpdateRate(chrEntityId2, true, CharacterUpdateFrequency.AlwaysUpdate);
+        DisableCharacterHPBarDisplay(chrEntityId2);
+        WaitFor(ElapsedSeconds(4));
+        EnableCharacter(chrEntityId2);
+        EnableCharacterAI(chrEntityId2);
+        ForceRatioAnimationPlayback(chrEntityId2, 20026, false, false, false);
+        SetNetworkconnectedEventFlagID(eventFlagId3, ON);
+        if (!IsMapVariation(2)) {
+            DisplayBossHealthBar(Enabled, chrEntityId2, 0, nameId);
+            LinkToBossHealthBar(Enabled, nameId, chrEntityId2);
+        }
+    }
+L0:
+    WaitFor(CharacterDead(chrEntityId2));
+    SetNetworkconnectedEventFlagID(eventFlagId4, ON);
+});
+
 
 $Event(90065140, Default, function(chrEntityId) {
     EndIf(!IsMapVariation(2));
