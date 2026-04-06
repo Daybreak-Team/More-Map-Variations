@@ -11419,7 +11419,6 @@ $Event(90065141, Restart, function(chrEntityId, chrEntityId2, chrEntityId3, even
     WaitFor(ElapsedSeconds(4));
     EnableCharacter(chrEntityId3);
     EnableCharacterAI(chrEntityId3);
-    ForceRatioAnimationPlayback(chrEntityId3, 20026, false, false, false);
     SetNetworkconnectedEventFlagID(eventFlagId3, ON);
     if (!IsMapVariation(2)) {
         DisplayBossHealthBar(Enabled, chrEntityId3, 0, nameId);
@@ -11469,7 +11468,6 @@ $Event(90065142, Restart, function(chrEntityId, chrEntityId2, chrEntityId3, even
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId3);
         EnableCharacterAI(chrEntityId3);
-        ForceRatioAnimationPlayback(chrEntityId3, 20026, false, false, false);
         SetNetworkconnectedEventFlagID(eventFlagId3, ON);
         if (!IsMapVariation(2)) {
             DisplayBossHealthBar(Enabled, chrEntityId3, 0, nameId);
@@ -11533,10 +11531,8 @@ L10:
     SetNetworkUpdateRate(chrEntityId3, true, CharacterUpdateFrequency.AlwaysUpdate);
     DisableCharacterHPBarDisplay(chrEntityId3);
     WaitFor(ElapsedSeconds(4));
-    ForceAnimationPlayback(chrEntityId2, 20026, false, false, false);
     EnableCharacter(chrEntityId2);
     EnableCharacterAI(chrEntityId2);
-    ForceAnimationPlayback(chrEntityId3, 20026, false, false, false);
     EnableCharacter(chrEntityId3);
     EnableCharacterAI(chrEntityId3);
     if (!IsMapVariation(2)) {
