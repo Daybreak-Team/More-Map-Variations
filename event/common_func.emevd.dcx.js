@@ -11289,7 +11289,7 @@ $Event(90065136, Restart, function() {
 });
 
 // black knight duo spawn
-$Event(90065137, Restart, function(chrEntityId, chrEntityId2, eventFlagId, eventFlagId2, nameId, eventFlagId3) {
+$Event(90065137, Restart, function(chrEntityId, chrEntityId2, eventFlagId, eventFlagId2, nameId, eventFlagId3, value) {
     if (EventFlag(eventFlagId2)) {
         DisableCharacter(chrEntityId2);
         DisableCharacterAI(chrEntityId2);
@@ -11307,7 +11307,7 @@ $Event(90065137, Restart, function(chrEntityId, chrEntityId2, eventFlagId, event
     DisableCharacter(chrEntityId2);
     DisableCharacterAI(chrEntityId2);
     WaitFor(EventFlag(eventFlagId));
-    WaitFor(HPRatio(chrEntityId) <= 0.8 || CharacterHasSpEffect(chrEntityId, 14601));
+    WaitFor(HPRatio(chrEntityId) <= value || CharacterHasSpEffect(chrEntityId, 14601));
     SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 900, 690048);
     SetNetworkUpdateRate(chrEntityId2, true, CharacterUpdateFrequency.AlwaysUpdate);
     DisableCharacterHPBarDisplay(chrEntityId2);
@@ -11323,7 +11323,7 @@ $Event(90065137, Restart, function(chrEntityId, chrEntityId2, eventFlagId, event
 });
 
 // black knight duo spawn
-$Event(90065138, Restart, function(chrEntityId, chrEntityId2, eventFlagId, eventFlagId2, nameId, eventFlagId3, eventFlagId4) {
+$Event(90065138, Restart, function(chrEntityId, chrEntityId2, eventFlagId, eventFlagId2, nameId, eventFlagId3, eventFlagId4, value) {
     if (EventFlag(eventFlagId2)) {
         DisableCharacter(chrEntityId2);
         DisableCharacterAI(chrEntityId2);
@@ -11347,7 +11347,7 @@ $Event(90065138, Restart, function(chrEntityId, chrEntityId2, eventFlagId, event
         DisableCharacter(chrEntityId2);
         DisableCharacterAI(chrEntityId2);
         WaitFor(EventFlag(eventFlagId));
-        WaitFor(HPRatio(chrEntityId) <= 0.8 || CharacterHasSpEffect(chrEntityId, 14601));
+        WaitFor(HPRatio(chrEntityId) <= value || CharacterHasSpEffect(chrEntityId, 14601));
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId2, 900, 690048);
         SetNetworkUpdateRate(chrEntityId2, true, CharacterUpdateFrequency.AlwaysUpdate);
         DisableCharacterHPBarDisplay(chrEntityId2);
