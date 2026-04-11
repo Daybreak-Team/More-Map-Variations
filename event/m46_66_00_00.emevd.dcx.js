@@ -24,11 +24,6 @@ $Event(0, Default, function() {
     $InitializeCommonEvent(0, 90015002, 0, 0, 46660820, 46660820, 1020, 950000, 11290, 905210600, 46660820);
     $InitializeCommonEvent(0, 9005810, 46660820, 46660500, 46661500, 5);
     $InitializeCommonEvent(0, 90015005, 46661500, 46662800, 46660820);
-    $InitializeCommonEvent(0, 90015000, 0, 46660830, 904680320, 30, 0, 0);
-    $InitializeCommonEvent(0, 90015030, 0, 46660830, 30, 920800, 0);
-    $InitializeCommonEvent(0, 90015002, 0, 0, 46660830, 46660830, 1020, 920800, 11290, 904680320, 46660830);
-    $InitializeCommonEvent(0, 9005810, 46660830, 46660500, 46661500, 5);
-    $InitializeCommonEvent(0, 90015005, 46661500, 46662800, 46660830);
     GotoIf(S0, Signed(0) != 0);
     GotoIf(S0, 0 != 0);
     Goto(S1);
@@ -36,7 +31,6 @@ S0:
     $InitializeCommonEvent(0, 90015008, 0, 46660800, 931010, 46660800, 0, 0);
     $InitializeCommonEvent(0, 90015008, 0, 46660810, 931000, 46660810, 0, 0);
     $InitializeCommonEvent(0, 90015008, 0, 46660820, 950000, 46660820, 0, 0);
-    $InitializeCommonEvent(0, 90015008, 0, 46660830, 920800, 46660830, 0, 0);
 S1:
     if (1 != 0) {
         $InitializeCommonEvent(0, 90015013);
@@ -47,8 +41,6 @@ S1:
     $InitializeCommonEvent(0, 90015016, 46660810);
     $InitializeCommonEvent(0, 90015015, 46660820);
     $InitializeCommonEvent(0, 90015016, 46660820);
-    $InitializeCommonEvent(0, 90015015, 46660830);
-    $InitializeCommonEvent(0, 90015016, 46660830);
     if (EventFlag(7604)) {
         $InitializeCommonEvent(0, 90015071, 46660800);
         $InitializeCommonEvent(0, 90015468, 46660800, 8270, 8247);
@@ -56,13 +48,10 @@ S1:
         $InitializeCommonEvent(0, 90015468, 46660810, 8270, 8247);
         $InitializeCommonEvent(0, 90015071, 46660820);
         $InitializeCommonEvent(0, 90015468, 46660820, 8270, 8247);
-        $InitializeCommonEvent(0, 90015071, 46660830);
-        $InitializeCommonEvent(0, 90015468, 46660830, 8270, 8247);
     }
     $InitializeCommonEvent(0, 90015199, 46660800);
     $InitializeCommonEvent(0, 90015199, 46660810);
     $InitializeCommonEvent(0, 90015199, 46660820);
-    $InitializeCommonEvent(0, 90015199, 46660830);
     if (IsPlayMode(2)) {
         $InitializeCommonEvent(0, 90015040, 0);
     }
