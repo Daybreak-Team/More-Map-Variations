@@ -11554,7 +11554,7 @@ L10:
 });
 
 // gank squad spawn
-$Event(90065144, Restart, function(chrEntityId3, chrEntityId4, chrEntityId5, chrEntityId6, chrEntityId7, chrEntityId8, chrEntityId9, chrEntityId10, chrEntityId11, eventFlagId, eventFlagId2, eventFlagId3) {
+$Event(90065144, Restart, function(chrEntityId3, chrEntityId4, chrEntityId5, chrEntityId6, chrEntityId7, chrEntityId11, eventFlagId, eventFlagId2, eventFlagId3) {
     if (EventFlag(eventFlagId2)) {
         if (IsPlayerCount(1)) {
             DisableCharacter(chrEntityId3);
@@ -11573,15 +11573,6 @@ $Event(90065144, Restart, function(chrEntityId3, chrEntityId4, chrEntityId5, chr
         DisableCharacter(chrEntityId7);
         DisableCharacterAI(chrEntityId7);
         ForceCharacterDeath(chrEntityId7, false);
-        DisableCharacter(chrEntityId8);
-        DisableCharacterAI(chrEntityId8);
-        ForceCharacterDeath(chrEntityId8, false);
-        DisableCharacter(chrEntityId9);
-        DisableCharacterAI(chrEntityId9);
-        ForceCharacterDeath(chrEntityId9, false);
-        DisableCharacter(chrEntityId10);
-        DisableCharacterAI(chrEntityId10);
-        ForceCharacterDeath(chrEntityId10, false);
         EndEvent();
     }
     if (IsPlayerCount(1)) {
@@ -11596,125 +11587,86 @@ $Event(90065144, Restart, function(chrEntityId3, chrEntityId4, chrEntityId5, chr
     DisableCharacterAI(chrEntityId6);
     DisableCharacter(chrEntityId7);
     DisableCharacterAI(chrEntityId7);
-    DisableCharacter(chrEntityId8);
-    DisableCharacterAI(chrEntityId8);
-    DisableCharacter(chrEntityId9);
-    DisableCharacterAI(chrEntityId9);
-    DisableCharacter(chrEntityId10);
-    DisableCharacterAI(chrEntityId10);
     WaitFor(EventFlag(eventFlagId));
     if (IsPlayerCount(1)) {
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 9));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 1));
+        SetCharacterBackreadState(chrEntityId3, false);
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId3, 900, 690048);
         SetNetworkUpdateRate(chrEntityId3, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId3);
         EnableCharacterAI(chrEntityId3);
         
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 8));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 2));
+        SetCharacterBackreadState(chrEntityId4, false);
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId4, 900, 690048);
         SetNetworkUpdateRate(chrEntityId4, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId4);
         EnableCharacterAI(chrEntityId4);
         
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 7));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 3));
+        SetCharacterBackreadState(chrEntityId5, false);
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId5, 900, 690048);
         SetNetworkUpdateRate(chrEntityId5, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId5);
         EnableCharacterAI(chrEntityId5);
         
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 6));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 4));
+        SetCharacterBackreadState(chrEntityId6, false);
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId6, 900, 690048);
         SetNetworkUpdateRate(chrEntityId6, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId6);
         EnableCharacterAI(chrEntityId6);
         
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 5));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 5));
+        SetCharacterBackreadState(chrEntityId7, false);
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId7, 900, 690048);
         SetNetworkUpdateRate(chrEntityId7, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId7);
         EnableCharacterAI(chrEntityId7);
-        
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 4));
-        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId8, 900, 690048);
-        SetNetworkUpdateRate(chrEntityId8, true, CharacterUpdateFrequency.AlwaysUpdate);
-        WaitFor(ElapsedSeconds(4));
-        EnableCharacter(chrEntityId8);
-        EnableCharacterAI(chrEntityId8);
-        
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 3));
-        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId9, 900, 690048);
-        SetNetworkUpdateRate(chrEntityId9, true, CharacterUpdateFrequency.AlwaysUpdate);
-        WaitFor(ElapsedSeconds(4));
-        EnableCharacter(chrEntityId9);
-        EnableCharacterAI(chrEntityId9);
-        
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 2));
-        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId10, 900, 690048);
-        SetNetworkUpdateRate(chrEntityId10, true, CharacterUpdateFrequency.AlwaysUpdate);
-        WaitFor(ElapsedSeconds(4));
-        EnableCharacter(chrEntityId10);
-        EnableCharacterAI(chrEntityId10);
     } else {
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 9));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 1));
+        SetCharacterBackreadState(chrEntityId4, false);
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId4, 900, 690048);
         SetNetworkUpdateRate(chrEntityId4, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId4);
         EnableCharacterAI(chrEntityId4);
         
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 8));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 2));
+        SetCharacterBackreadState(chrEntityId5, false);
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId5, 900, 690048);
         SetNetworkUpdateRate(chrEntityId5, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId5);
         EnableCharacterAI(chrEntityId5);
         
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 7));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 3));
+        SetCharacterBackreadState(chrEntityId6, false);
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId6, 900, 690048);
         SetNetworkUpdateRate(chrEntityId6, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId6);
         EnableCharacterAI(chrEntityId6);
         
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 6));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 4));
+        SetCharacterBackreadState(chrEntityId7, false);
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId7, 900, 690048);
         SetNetworkUpdateRate(chrEntityId7, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId7);
         EnableCharacterAI(chrEntityId7);
-        
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 5));
-        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId8, 900, 690048);
-        SetNetworkUpdateRate(chrEntityId8, true, CharacterUpdateFrequency.AlwaysUpdate);
-        WaitFor(ElapsedSeconds(4));
-        EnableCharacter(chrEntityId8);
-        EnableCharacterAI(chrEntityId8);
-        
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 4));
-        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId9, 900, 690048);
-        SetNetworkUpdateRate(chrEntityId9, true, CharacterUpdateFrequency.AlwaysUpdate);
-        WaitFor(ElapsedSeconds(4));
-        EnableCharacter(chrEntityId9);
-        EnableCharacterAI(chrEntityId9);
-        
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 3));
-        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId10, 900, 690048);
-        SetNetworkUpdateRate(chrEntityId10, true, CharacterUpdateFrequency.AlwaysUpdate);
-        WaitFor(ElapsedSeconds(4));
-        EnableCharacter(chrEntityId10);
-        EnableCharacterAI(chrEntityId10);
     }
     
     SetNetworkconnectedEventFlagID(eventFlagId3, ON);
 });
 
 // gank squad spawn
-$Event(90065145, Restart, function(chrEntityId3, chrEntityId4, chrEntityId5, chrEntityId6, chrEntityId7, chrEntityId8, chrEntityId9, chrEntityId10, chrEntityId11, eventFlagId, eventFlagId2, eventFlagId3, eventFlagId4) {
+$Event(90065145, Restart, function(chrEntityId3, chrEntityId4, chrEntityId5, chrEntityId6, chrEntityId7, chrEntityId11, eventFlagId, eventFlagId2, eventFlagId3, eventFlagId4) {
     if (EventFlag(eventFlagId2)) {
         if (IsPlayerCount(1)) {
             DisableCharacter(chrEntityId3);
@@ -11733,15 +11685,6 @@ $Event(90065145, Restart, function(chrEntityId3, chrEntityId4, chrEntityId5, chr
         DisableCharacter(chrEntityId7);
         DisableCharacterAI(chrEntityId7);
         ForceCharacterDeath(chrEntityId7, false);
-        DisableCharacter(chrEntityId8);
-        DisableCharacterAI(chrEntityId8);
-        ForceCharacterDeath(chrEntityId8, false);
-        DisableCharacter(chrEntityId9);
-        DisableCharacterAI(chrEntityId9);
-        ForceCharacterDeath(chrEntityId9, false);
-        DisableCharacter(chrEntityId10);
-        DisableCharacterAI(chrEntityId10);
-        ForceCharacterDeath(chrEntityId10, false);
         EndEvent();
     }
     if (EventFlag(eventFlagId4)) {
@@ -11762,15 +11705,6 @@ $Event(90065145, Restart, function(chrEntityId3, chrEntityId4, chrEntityId5, chr
         DisableCharacter(chrEntityId7);
         DisableCharacterAI(chrEntityId7);
         ForceCharacterDeath(chrEntityId7, false);
-        DisableCharacter(chrEntityId8);
-        DisableCharacterAI(chrEntityId8);
-        ForceCharacterDeath(chrEntityId8, false);
-        DisableCharacter(chrEntityId9);
-        DisableCharacterAI(chrEntityId9);
-        ForceCharacterDeath(chrEntityId9, false);
-        DisableCharacter(chrEntityId10);
-        DisableCharacterAI(chrEntityId10);
-        ForceCharacterDeath(chrEntityId10, false);
         EndEvent();
     }
     WaitFixedTimeFrames(1);
@@ -11786,122 +11720,74 @@ $Event(90065145, Restart, function(chrEntityId3, chrEntityId4, chrEntityId5, chr
     DisableCharacterAI(chrEntityId6);
     DisableCharacter(chrEntityId7);
     DisableCharacterAI(chrEntityId7);
-    DisableCharacter(chrEntityId8);
-    DisableCharacterAI(chrEntityId8);
-    DisableCharacter(chrEntityId9);
-    DisableCharacterAI(chrEntityId9);
-    DisableCharacter(chrEntityId10);
-    DisableCharacterAI(chrEntityId10);
     WaitFor(EventFlag(eventFlagId));
    if (IsPlayerCount(1)) {
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 9));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 1));
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId3, 900, 690048);
         SetNetworkUpdateRate(chrEntityId3, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId3);
         EnableCharacterAI(chrEntityId3);
         
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 8));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 2));
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId4, 900, 690048);
         SetNetworkUpdateRate(chrEntityId4, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId4);
         EnableCharacterAI(chrEntityId4);
         
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 7));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 3));
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId5, 900, 690048);
         SetNetworkUpdateRate(chrEntityId5, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId5);
         EnableCharacterAI(chrEntityId5);
         
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 6));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 4));
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId6, 900, 690048);
         SetNetworkUpdateRate(chrEntityId6, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId6);
         EnableCharacterAI(chrEntityId6);
         
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 5));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 5));
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId7, 900, 690048);
         SetNetworkUpdateRate(chrEntityId7, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId7);
         EnableCharacterAI(chrEntityId7);
-        
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 4));
-        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId8, 900, 690048);
-        SetNetworkUpdateRate(chrEntityId8, true, CharacterUpdateFrequency.AlwaysUpdate);
-        WaitFor(ElapsedSeconds(4));
-        EnableCharacter(chrEntityId8);
-        EnableCharacterAI(chrEntityId8);
-        
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 3));
-        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId9, 900, 690048);
-        SetNetworkUpdateRate(chrEntityId9, true, CharacterUpdateFrequency.AlwaysUpdate);
-        WaitFor(ElapsedSeconds(4));
-        EnableCharacter(chrEntityId9);
-        EnableCharacterAI(chrEntityId9);
-        
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 2));
-        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId10, 900, 690048);
-        SetNetworkUpdateRate(chrEntityId10, true, CharacterUpdateFrequency.AlwaysUpdate);
-        WaitFor(ElapsedSeconds(4));
-        EnableCharacter(chrEntityId10);
-        EnableCharacterAI(chrEntityId10);
     } else {
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 9));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 1));
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId4, 900, 690048);
         SetNetworkUpdateRate(chrEntityId4, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId4);
         EnableCharacterAI(chrEntityId4);
         
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 8));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 2));
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId5, 900, 690048);
         SetNetworkUpdateRate(chrEntityId5, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId5);
         EnableCharacterAI(chrEntityId5);
         
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 7));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 3));
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId6, 900, 690048);
         SetNetworkUpdateRate(chrEntityId6, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId6);
         EnableCharacterAI(chrEntityId6);
         
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 6));
+        WaitFor(CompareHPRatio(chrEntityId11, LessOrEqual, 0, GreaterOrEqual, 4));
         SpawnOneshotSFX(TargetEntityType.Character, chrEntityId7, 900, 690048);
         SetNetworkUpdateRate(chrEntityId7, true, CharacterUpdateFrequency.AlwaysUpdate);
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId7);
         EnableCharacterAI(chrEntityId7);
-        
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 5));
-        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId8, 900, 690048);
-        SetNetworkUpdateRate(chrEntityId8, true, CharacterUpdateFrequency.AlwaysUpdate);
-        WaitFor(ElapsedSeconds(4));
-        EnableCharacter(chrEntityId8);
-        EnableCharacterAI(chrEntityId8);
-        
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 4));
-        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId9, 900, 690048);
-        SetNetworkUpdateRate(chrEntityId9, true, CharacterUpdateFrequency.AlwaysUpdate);
-        WaitFor(ElapsedSeconds(4));
-        EnableCharacter(chrEntityId9);
-        EnableCharacterAI(chrEntityId9);
-        
-        WaitFor(CompareHPRatio(chrEntityId11, Greater, 0, LessOrEqual, 3));
-        SpawnOneshotSFX(TargetEntityType.Character, chrEntityId10, 900, 690048);
-        SetNetworkUpdateRate(chrEntityId10, true, CharacterUpdateFrequency.AlwaysUpdate);
-        WaitFor(ElapsedSeconds(4));
-        EnableCharacter(chrEntityId10);
-        EnableCharacterAI(chrEntityId10);
     }
     
     SetNetworkconnectedEventFlagID(eventFlagId3, ON);
-    WaitFor(CharacterDead(chrEntityId10));
+    WaitFor(CharacterDead(chrEntityId7));
     SetNetworkconnectedEventFlagID(eventFlagId4, ON);
 });
 
@@ -12989,11 +12875,14 @@ $Event(90065913, Restart, function(eventFlagId, eventFlagId2, eventFlagId3, bgmB
     }
     if (EventFlag(eventFlagId2)) {
         SetNetworkUpdateRate(chrEntityId, true, CharacterUpdateFrequency.AlwaysUpdate);
+        SetCharacterBackreadState(chrEntityId2, false);
         EnableCharacter(chrEntityId2);
         EnableCharacterAI(chrEntityId2);
+        SetCharacterBackreadState(chrEntityId3, false);
         EnableCharacter(chrEntityId3);
         EnableCharacterAI(chrEntityId3);
         if (!IsPlayerCount(1)) {
+            SetCharacterBackreadState(chrEntityId4, false);
             EnableCharacter(chrEntityId4);
             EnableCharacterAI(chrEntityId4);
         }
@@ -13026,11 +12915,14 @@ L1:
     }
     SetNetworkUpdateRate(chrEntityId, true, CharacterUpdateFrequency.AlwaysUpdate);
     WaitFor(ElapsedSeconds(4));
+    SetCharacterBackreadState(chrEntityId2, false);
     EnableCharacter(chrEntityId2);
     EnableCharacterAI(chrEntityId2);
+    SetCharacterBackreadState(chrEntityId3, false);
     EnableCharacter(chrEntityId3);
     EnableCharacterAI(chrEntityId3);
-    if (!IsPlayerCount(1)) {
+    if (IsPlayerCount(1)) {
+        SetCharacterBackreadState(chrEntityId4, false);
         EnableCharacter(chrEntityId4);
         EnableCharacterAI(chrEntityId4);
     }
