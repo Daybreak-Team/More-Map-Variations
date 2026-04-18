@@ -1975,7 +1975,13 @@ $Event(1190, Default, function() {
             || EventFlag(49660800)
             || EventFlag(49670800)
             || EventFlag(49680800)
-            || EventFlag(49690800));
+            || EventFlag(49690800)
+            || EventFlag(49700800)
+            || EventFlag(49710800)
+            || EventFlag(49720800)
+            || EventFlag(49730800)
+            || EventFlag(49740800)
+            || EventFlag(49750800));
     SetNetworkconnectedEventFlagID(7502, ON);
 });
 
@@ -2034,7 +2040,13 @@ $Event(1191, Default, function() {
             || EventFlag(49660850)
             || EventFlag(49670850)
             || EventFlag(49680850)
-            || EventFlag(49690850));
+            || EventFlag(49690850)
+            || EventFlag(49700850)
+            || EventFlag(49710850)
+            || EventFlag(49720850)
+            || EventFlag(49730850)
+            || EventFlag(49740850)
+            || EventFlag(49750850));
     SetNetworkconnectedEventFlagID(7507, ON);
 });
 
@@ -3435,5 +3447,3 @@ L2:
     WaitFixedTimeFrames(1);
     RestartEvent();
 });
-
-

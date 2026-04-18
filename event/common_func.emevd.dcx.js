@@ -11314,7 +11314,6 @@ $Event(90065137, Restart, function(chrEntityId, chrEntityId2, eventFlagId, event
     WaitFor(ElapsedSeconds(4));
     EnableCharacter(chrEntityId2);
     EnableCharacterAI(chrEntityId2);
-    ForceRatioAnimationPlayback(chrEntityId2, 20026, false, false, false);
     SetNetworkconnectedEventFlagID(eventFlagId3, ON);
     if (!IsMapVariation(2)) {
         DisplayBossHealthBar(Enabled, chrEntityId2, 0, nameId);
@@ -11354,7 +11353,6 @@ $Event(90065138, Restart, function(chrEntityId, chrEntityId2, eventFlagId, event
         WaitFor(ElapsedSeconds(4));
         EnableCharacter(chrEntityId2);
         EnableCharacterAI(chrEntityId2);
-        ForceRatioAnimationPlayback(chrEntityId2, 20026, false, false, false);
         SetNetworkconnectedEventFlagID(eventFlagId3, ON);
         if (!IsMapVariation(2)) {
             DisplayBossHealthBar(Enabled, chrEntityId2, 0, nameId);
