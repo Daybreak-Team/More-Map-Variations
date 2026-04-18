@@ -9,6 +9,8 @@ nrsc_launcher.exe
 SeamlessCoop/nrsc.dll
 SeamlessCoop/crashpad/crashpad_handler.exe
 SeamlessCoop/locale/english.json
+map/m10/m10_00_00_00/m10_00_00_00_0000.btl.dcx
+map/mapstudio/m10_00_00_00.msb.dcx
 nighter.dll
 nighter.json
 nrhkshotloader.dll
