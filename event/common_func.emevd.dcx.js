@@ -12919,7 +12919,7 @@ L1:
     SetCharacterBackreadState(chrEntityId3, false);
     EnableCharacter(chrEntityId3);
     EnableCharacterAI(chrEntityId3);
-    if (IsPlayerCount(1)) {
+    if (!IsPlayerCount(1)) {
         SetCharacterBackreadState(chrEntityId4, false);
         EnableCharacter(chrEntityId4);
         EnableCharacterAI(chrEntityId4);
