@@ -13,6 +13,10 @@ $Event(0, Default, function() {
     $InitializeEvent(0, 40102505);
     $InitializeEvent(1, 40102580, 1, 40101601, 40101621, 40100581, 807390);
     $InitializeEvent(1, 40102590, 1, 40101601, 40100591);
+    $InitializeEvent(1, 40102580, 2, 40101601, 40101621, 40100581, 807390);
+    $InitializeEvent(1, 40102590, 2, 40101601, 40100591);
+    $InitializeEvent(1, 40102580, 3, 40101601, 40101621, 40100581, 807390);
+    $InitializeEvent(1, 40102590, 3, 40101601, 40100591);    
     $InitializeCommonEvent(0, 90015500, 40102320);
 });
 
@@ -76,11 +80,9 @@ L0:
     SetNetworkconnectedEventFlagID(40100501, ON);
     WaitFixedTimeSeconds(0.1);
     
-    if (IsMapVariation(1)) {
-        ForceAnimationPlayback(assetEntityId2, 1, false, false, false);
-        SpawnOneshotSFX(TargetEntityType.Asset, assetEntityId2, 100, sfxId);
-        WaitFixedTimeSeconds(2);
-    }
+    ForceAnimationPlayback(assetEntityId2, 1, false, false, false);
+    SpawnOneshotSFX(TargetEntityType.Asset, assetEntityId2, 100, sfxId);
+    WaitFixedTimeSeconds(2);
 
     DisableAsset(assetEntityId2);
     WaitFixedTimeSeconds(0.1);
