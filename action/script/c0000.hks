@@ -83,7 +83,7 @@ end
 
 function Discord()
     if env(GetSpEffectID, 690002) == TRUE then
-        openurl(690002, "discord.gg/invite/mMWgsdTnWw")
+        openurl2(690002)
 		act(Wait)
     end
 end
@@ -98,6 +98,11 @@ end
 function openurl(spEffect, url)
     act(ClearSpEffect, spEffect)
     os.execute('start "link" "https://' .. url .. '/"')
+end
+
+function openurl2(spEffect, url)
+    act(ClearSpEffect, spEffect)
+    os.execute('start "link" "https://discord.gg/mMWgsdTnWw"')
 end
 
 function ExecEvent(state)
