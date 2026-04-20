@@ -76,28 +76,28 @@
 ------------------------------------------
 function Modpage()
     if env(GetSpEffectID, 690001) == TRUE then
-        open_url("https://www.nexusmods.com/eldenringnightreign/mods/578")
+        openurl(690001, "www.nexusmods.com/eldenringnightreign/mods/578")
 		act(Wait)
     end
 end
 
 function Discord()
     if env(GetSpEffectID, 690002) == TRUE then
-        open_url("https://discord.gg/mMWgsdTnWw")
+        openurl(690002, "discord.gg/invite/mMWgsdTnWw")
 		act(Wait)
     end
 end
 
 function Patreon()
     if env(GetSpEffectID, 690003) == TRUE then
-        open_url("https://patreon.com/DaybreakTeam?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink")
+        openurl(690003, "patreon.com/DaybreakTeam?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink")
 		act(Wait)
     end
 end
 
-function open_url(url)
-    os.execute('open "" "' .. url .. '"')
-    os.execute('start "" "' .. url .. '"')
+function openurl(spEffect, url)
+    act(ClearSpEffect, spEffect)
+    os.execute('start "link" "https://' .. url .. '/"')
 end
 
 function ExecEvent(state)
