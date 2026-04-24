@@ -27,7 +27,7 @@ $Event(0, Default, function() {
     $InitializeCommonEvent(0, 90065121, 49740200, 49740205, 49740800, 931000, 690047, 49745210, 49740800, 904770002, 49740810, 904770003, 0, 0);
     $InitializeCommonEvent(0, 90065911, 49740200, 49740800, 931000, 49745210, 49740800, 904770002, 49740810, 904770003, 0, 0, 0);
     if (!IsMapVariation(2)) {
-        $InitializeCommonEvent(0, 90065900, 49740800, 1, 0, 0, 1050, 931000, 904770002, 49740800);
+        $InitializeCommonEvent(0, 90065900, 49740800, 2, 0, 0, 1050, 931000, 904770002, 49740800);
     }
     $InitializeCommonEvent(0, 90015012, 49745210, 49740200);
     $InitializeCommonEvent(1, 90015012, 0, 49740200);
@@ -63,27 +63,27 @@ $Event(0, Default, function() {
         $InitializeCommonEvent(0, 90015475, 49742200, 0);
     }
     $InitializeCommonEvent(0, 90035001, 49740800);
-    if (1 == 1) {
+    if (2 == 1) {
         $InitializeCommonEvent(0, 90015070, 1056402601, 49740000, 49740300);
         $InitializeCommonEvent(0, 90015070, 1028402600, 49740000, 49740300);
     }
-    if (1 == 2) {
+    if (2 == 2) {
         $InitializeCommonEvent(0, 90015070, 1056402602, 49740000, 49740300);
         $InitializeCommonEvent(0, 90015070, 1028402601, 49740000, 49740300);
     }
-    if (1 == 3) {
+    if (2 == 3) {
         $InitializeCommonEvent(0, 90015070, 1056402603, 49740000, 49740300);
         $InitializeCommonEvent(0, 90015070, 1028402602, 49740000, 49740300);
     }
-    if (2 == 1) {
+    if (3 == 1) {
         $InitializeCommonEvent(0, 90015070, 1056402601, 49740000, 49740301);
         $InitializeCommonEvent(0, 90015070, 1028402600, 49740000, 49740301);
     }
-    if (2 == 2) {
+    if (3 == 2) {
         $InitializeCommonEvent(0, 90015070, 1056402602, 49740000, 49740301);
         $InitializeCommonEvent(0, 90015070, 1028402601, 49740000, 49740301);
     }
-    if (2 == 3) {
+    if (3 == 3) {
         $InitializeCommonEvent(0, 90015070, 1056402603, 49740000, 49740301);
         $InitializeCommonEvent(0, 90015070, 1028402602, 49740000, 49740301);
     }
