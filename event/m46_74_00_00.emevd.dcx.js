@@ -14,9 +14,9 @@ $Event(0, Default, function() {
     $InitializeCommonEvent(0, 90015002, 0, 0, 46745800, 46745800, 1020, 356000, 11290, 903575000, 46745800);
     $InitializeCommonEvent(0, 9005810, 46740800, 46740500, 46741500, 5);
     $InitializeCommonEvent(0, 90015005, 46741500, 46742800, 46745800);
-    $InitializeCommonEvent(0, 90015000, 0, 46740810, 902500311, 30, 0, 0);
+    $InitializeCommonEvent(0, 90015000, 0, 46740810, 904680320, 30, 0, 0);
     $InitializeCommonEvent(0, 90015030, 0, 46740810, 30, 920210, 0);
-    $InitializeCommonEvent(0, 90015002, 0, 0, 46740810, 46740810, 1020, 920210, 11290, 902500311, 46740810);
+    $InitializeCommonEvent(0, 90015002, 0, 0, 46740810, 46740810, 1020, 920210, 11290, 904680320, 46740810);
     $InitializeCommonEvent(0, 9005810, 46740810, 46740500, 46741500, 5);
     $InitializeCommonEvent(0, 90015005, 46741500, 46742800, 46740810);
     $InitializeCommonEvent(0, 90015000, 0, 46740820, 904980600, 30, 0, 0);
